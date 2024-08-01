@@ -1,0 +1,10 @@
+/* styles/ThemeSwitcher.module.css */
+
+.btnTheme {
+  color: var(--navbar-text) !important;
+  transition: color 0.3s ease !important;
+}
+
+.btnTheme:hover {
+  color: var(--navbar-text-hover) !important;
+}

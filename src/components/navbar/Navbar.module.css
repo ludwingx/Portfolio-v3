@@ -1,0 +1,23 @@
+/* styles/Navbar.module.css */
+
+.navbarLink, .menuItem {
+  color: var(--navbar-text);
+  text-decoration: none;
+  padding: 8px 16px;
+}
+
+/* Estilo para enlaces */
+.navbarLink:hover, .menuItem:hover {
+  color: var(--navbar-text-hover);
+  background-color: var(--navbar-background-hover);
+}
+
+.navbarButton {
+  color: var(--navbar-text);
+  transition: color 0.3s;
+}
+
+/* Estilo para botones (si aplican) */
+.navbarButton:hover {
+  color: var(--navbar-text-hover);
+}

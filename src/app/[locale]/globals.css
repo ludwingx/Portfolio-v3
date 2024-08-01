@@ -1,0 +1,25 @@
+/* styles/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import '../../styles/colors.css'; /* Importar colores */
+
+body {
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+/* Aplicar variables a los temas */
+[data-theme='light'] {
+  --navbar-background: var(--navbar-background-light);
+  --navbar-text: var(--navbar-text-light);
+  --navbar-background-hover: var(--navbar-background-hover-light);
+  --navbar-text-hover: var(--navbar-text-hover-light);
+}
+
+[data-theme='dark'] {
+  --navbar-background: var(--navbar-background-dark);
+  --navbar-text: var(--navbar-text-dark);
+  --navbar-background-hover: var(--navbar-background-hover-dark);
+  --navbar-text-hover: var(--navbar-text-hover-dark);
+}

@@ -1,0 +1,12 @@
+{
+  "Home": {
+    "title": "I'am Ludwing 👋, a Full Stack Web Developer",
+    "subtitle": "I specialize in innovative technical solutions using a wide range of technologies. My experience in independent projects and collaborations has allowed me to refine my skills and tackle various challenges in web development."
+  },
+  "Navbar": {
+    "about": "ABOUT ME",
+    "portfolio": "PORTFOLIO",
+    "services": "SERVICES",
+    "contact": "CONTACT ME"
+  }
+}
