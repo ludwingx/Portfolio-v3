@@ -3,14 +3,17 @@ import { useTranslations } from 'next-intl';
 
 export default function Home() {
   const t = useTranslations('Home');
+
   return (
     <Container
-      maxWidth="md" // Establece el ancho máximo del contenedor
+      maxWidth="md"
       sx={{
-        padding: 2, // Padding para evitar que el texto toque los bordes
-        '@media (max-width: 600px)': { // Ajustar padding para móviles
+        padding: 2,
+        '@media (max-width: 600px)': {
           padding: 1,
-        }
+        },
+        backgroundColor: 'var(--background-color)', // Aplicar el color de fondo del tema
+        color: 'var(--text-color)', // Aplicar el color del texto del tema
       }}
     >
       <Box
@@ -21,14 +24,18 @@ export default function Home() {
           minHeight: "100vh",
           textAlign: "center",
           paddingTop: 10,
-
         }}
       >
         {/* Títulos y Descripción General */}
         <Box
-          gap={6} // Incrementa el espacio entre los elementos dentro del box
-          p={4}
-          sx={{ textAlign: "center", display: "flex", flexDirection: "column", maxWidth: "800px" }}
+          sx={{
+            gap: 6,
+            p: 4,
+            textAlign: "center",
+            display: "flex",
+            flexDirection: "column",
+            maxWidth: "800px",
+          }}
         >
           <Typography
             variant="h2"
@@ -43,14 +50,13 @@ export default function Home() {
         </Box>
         <Box
           sx={{
-            mt: 8, // Aumenta el margen superior para más separación entre secciones
+            mt: 8,
             textAlign: "center",
             maxWidth: "800px",
-            paddingTop:5,
-            paddingBottom:5,
+            paddingTop: 5,
+            paddingBottom: 5,
           }}
         >
-
           <Typography variant="h3">
             {t('title2')}
           </Typography>
@@ -62,32 +68,33 @@ export default function Home() {
         <Box
           sx={{
             display: "flex",
-            flexDirection: { xs: "column", md: "row" }, // Cambia la dirección en pantallas pequeñas y grandes
-            gap: 6, // Incrementa el espacio entre las tarjetas
-            mt: 8, // Aumenta el margen superior para más separación de la sección anterior
+            flexDirection: { xs: "column", md: "row" },
+            gap: 6,
+            mt: 8,
             maxWidth: "800px",
             mx: "auto",
-            justifyContent: "center", // Centra las tarjetas horizontalmente
+            justifyContent: "center",
           }}
         >
           <Box
             sx={{
               flex: 1,
-              p: 4, // Incrementa el padding para dar más espacio interno
-              border: "1px solid #ddd",
+              p: 4,
+              border: "1px solid var(--navbar-background)", // Aplicar borde del tema
               borderRadius: 2,
-              boxShadow: 2, // Incrementa la sombra para mayor separación visual
+              boxShadow: 2,
               textAlign: "center",
-              backgroundColor: "#fff",
-              minWidth: { xs: "100%", md: "300px" }, // Aumenta el tamaño mínimo en móviles y desktop
-              maxWidth: "400px", // Aumenta el tamaño máximo para evitar que se expandan demasiado
-              '@media (max-width: 600px)': { // Ajustar el tamaño de la tarjeta en móviles
-                width: "100%",
-              }
+              backgroundColor: "var(--background-color)", // Aplicar color de fondo del tema
+              minWidth: { xs: "100%", md: "300px" },
+              maxWidth: "400px",
+              transition: "background-color 0.3s",
+              '&:hover': {
+                backgroundColor: 'var(--navbar-background-hover)', // Aplicar color de fondo al pasar el ratón
+              },
             }}
           >
             <Typography variant="h6" sx={{ fontWeight: "bold" }} gutterBottom>
-              <i className="fa fa-code" aria-hidden="true"></i> {/* Puedes reemplazar esto con tu icono */}
+              <i className="fa fa-code" aria-hidden="true"></i>
               {t('service1Title')}
             </Typography>
             <Typography>
@@ -98,21 +105,22 @@ export default function Home() {
           <Box
             sx={{
               flex: 1,
-              p: 4, // Incrementa el padding para dar más espacio interno
-              border: "1px solid #ddd",
+              p: 4,
+              border: "1px solid var(--navbar-background)", // Aplicar borde del tema
               borderRadius: 2,
-              boxShadow: 2, // Incrementa la sombra para mayor separación visual
+              boxShadow: 2,
               textAlign: "center",
-              backgroundColor: "#fff",
-              minWidth: { xs: "100%", md: "300px" }, // Aumenta el tamaño mínimo en móviles y desktop
-              maxWidth: "400px", // Aumenta el tamaño máximo para evitar que se expandan demasiado
-              '@media (max-width: 600px)': { // Ajustar el tamaño de la tarjeta en móviles
-                width: "100%",
-              }
+              backgroundColor: "var(--background-color)", // Aplicar color de fondo del tema
+              minWidth: { xs: "100%", md: "300px" },
+              maxWidth: "400px",
+              transition: "background-color 0.3s",
+              '&:hover': {
+                backgroundColor: 'var(--navbar-background-hover)', // Aplicar color de fondo al pasar el ratón
+              },
             }}
           >
             <Typography variant="h6" sx={{ fontWeight: "bold" }} gutterBottom>
-              <i className="fa fa-pencil" aria-hidden="true"></i> {/* Puedes reemplazar esto con tu icono */}
+              <i className="fa fa-pencil" aria-hidden="true"></i>
               {t('service2Title')}
             </Typography>
             <Typography>
@@ -123,21 +131,22 @@ export default function Home() {
           <Box
             sx={{
               flex: 1,
-              p: 4, // Incrementa el padding para dar más espacio interno
-              border: "1px solid #ddd",
+              p: 4,
+              border: "1px solid var(--navbar-background)", // Aplicar borde del tema
               borderRadius: 2,
-              boxShadow: 2, // Incrementa la sombra para mayor separación visual
+              boxShadow: 2,
               textAlign: "center",
-              backgroundColor: "#fff",
-              minWidth: { xs: "100%", md: "300px" }, // Aumenta el tamaño mínimo en móviles y desktop
-              maxWidth: "400px", // Aumenta el tamaño máximo para evitar que se expandan demasiado
-              '@media (max-width: 600px)': { // Ajustar el tamaño de la tarjeta en móviles
-                width: "100%",
-              }
+              backgroundColor: "var(--background-color)", // Aplicar color de fondo del tema
+              minWidth: { xs: "100%", md: "300px" },
+              maxWidth: "400px",
+              transition: "background-color 0.3s",
+              '&:hover': {
+                backgroundColor: 'var(--navbar-background-hover)', // Aplicar color de fondo al pasar el ratón
+              },
             }}
           >
             <Typography variant="h6" sx={{ fontWeight: "bold" }} gutterBottom>
-              <i className="fa fa-cogs" aria-hidden="true"></i> {/* Puedes reemplazar esto con tu icono */}
+              <i className="fa fa-cogs" aria-hidden="true"></i>
               {t('service3Title')}
             </Typography>
             <Typography>
