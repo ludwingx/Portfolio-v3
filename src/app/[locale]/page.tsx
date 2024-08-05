@@ -4,21 +4,32 @@ import { useTranslations } from 'next-intl';
 export default function Home() {
   const t = useTranslations('Home');
   return (
-    <Container className="container">
+    <Container
+      maxWidth="md" // Establece el ancho máximo del contenedor
+      sx={{
+        padding: 2, // Padding para evitar que el texto toque los bordes
+        '@media (max-width: 600px)': { // Ajustar padding para móviles
+          padding: 1,
+        }
+      }}
+    >
       <Box
         sx={{
           display: "flex",
-          justifyContent: "center",
+          flexDirection: "column",
           alignItems: "center",
-          minHeight: "100vh", // Ajustado para cubrir la pantalla
+          minHeight: "100vh",
           textAlign: "center",
-          padding: 2, // Agregar padding para evitar que el texto toque los bordes
-          '@media (max-width: 600px)': { // Ajustar padding para móviles
-            padding: 1,
-          }
+          paddingTop: 10,
+
         }}
       >
-        <Box gap={4} p={4} sx={{ textAlign: "center", display: "flex", flexDirection: "column" }}>
+        {/* Títulos y Descripción General */}
+        <Box
+          gap={6} // Incrementa el espacio entre los elementos dentro del box
+          p={4}
+          sx={{ textAlign: "center", display: "flex", flexDirection: "column", maxWidth: "800px" }}
+        >
           <Typography
             variant="h2"
             gutterBottom
@@ -29,14 +40,108 @@ export default function Home() {
           <Typography variant="h5">
             {t('subtitle')}
           </Typography>
+        </Box>
+        <Box
+          sx={{
+            mt: 8, // Aumenta el margen superior para más separación entre secciones
+            textAlign: "center",
+            maxWidth: "800px",
+            paddingTop:5,
+            paddingBottom:5,
+          }}
+        >
 
-          {/* Nueva sección añadida aquí */}
-          <Box mt={4} sx={{ textAlign: "center" }}>
-            <Typography variant="h4" gutterBottom>
-              {t('title2')}
+          <Typography variant="h3">
+            {t('title2')}
+          </Typography>
+          <Typography variant="h5">
+            {t('subtitle2')}
+          </Typography>
+        </Box>
+        {/* Servicios */}
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: { xs: "column", md: "row" }, // Cambia la dirección en pantallas pequeñas y grandes
+            gap: 6, // Incrementa el espacio entre las tarjetas
+            mt: 8, // Aumenta el margen superior para más separación de la sección anterior
+            maxWidth: "800px",
+            mx: "auto",
+            justifyContent: "center", // Centra las tarjetas horizontalmente
+          }}
+        >
+          <Box
+            sx={{
+              flex: 1,
+              p: 4, // Incrementa el padding para dar más espacio interno
+              border: "1px solid #ddd",
+              borderRadius: 2,
+              boxShadow: 2, // Incrementa la sombra para mayor separación visual
+              textAlign: "center",
+              backgroundColor: "#fff",
+              minWidth: { xs: "100%", md: "300px" }, // Aumenta el tamaño mínimo en móviles y desktop
+              maxWidth: "400px", // Aumenta el tamaño máximo para evitar que se expandan demasiado
+              '@media (max-width: 600px)': { // Ajustar el tamaño de la tarjeta en móviles
+                width: "100%",
+              }
+            }}
+          >
+            <Typography variant="h6" sx={{ fontWeight: "bold" }} gutterBottom>
+              <i className="fa fa-code" aria-hidden="true"></i> {/* Puedes reemplazar esto con tu icono */}
+              {t('service1Title')}
             </Typography>
-            <Typography variant="body1">
-              {t('subtitle2')}
+            <Typography>
+              {t('service1Description')}
+            </Typography>
+          </Box>
+
+          <Box
+            sx={{
+              flex: 1,
+              p: 4, // Incrementa el padding para dar más espacio interno
+              border: "1px solid #ddd",
+              borderRadius: 2,
+              boxShadow: 2, // Incrementa la sombra para mayor separación visual
+              textAlign: "center",
+              backgroundColor: "#fff",
+              minWidth: { xs: "100%", md: "300px" }, // Aumenta el tamaño mínimo en móviles y desktop
+              maxWidth: "400px", // Aumenta el tamaño máximo para evitar que se expandan demasiado
+              '@media (max-width: 600px)': { // Ajustar el tamaño de la tarjeta en móviles
+                width: "100%",
+              }
+            }}
+          >
+            <Typography variant="h6" sx={{ fontWeight: "bold" }} gutterBottom>
+              <i className="fa fa-pencil" aria-hidden="true"></i> {/* Puedes reemplazar esto con tu icono */}
+              {t('service2Title')}
+            </Typography>
+            <Typography>
+              {t('service2Description')}
+            </Typography>
+          </Box>
+
+          <Box
+            sx={{
+              flex: 1,
+              p: 4, // Incrementa el padding para dar más espacio interno
+              border: "1px solid #ddd",
+              borderRadius: 2,
+              boxShadow: 2, // Incrementa la sombra para mayor separación visual
+              textAlign: "center",
+              backgroundColor: "#fff",
+              minWidth: { xs: "100%", md: "300px" }, // Aumenta el tamaño mínimo en móviles y desktop
+              maxWidth: "400px", // Aumenta el tamaño máximo para evitar que se expandan demasiado
+              '@media (max-width: 600px)': { // Ajustar el tamaño de la tarjeta en móviles
+                width: "100%",
+              }
+            }}
+          >
+            <Typography variant="h6" sx={{ fontWeight: "bold" }} gutterBottom>
+              <i className="fa fa-cogs" aria-hidden="true"></i> {/* Puedes reemplazar esto con tu icono */}
+              {t('service3Title')}
+            </Typography>
+            <Typography>
+              {t('service3Description')}
             </Typography>
           </Box>
         </Box>

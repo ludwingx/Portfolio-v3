@@ -3,8 +3,13 @@
     "title": "Soy Ludwing 👋, un Desarrollador Web Full Stack",
     "subtitle": "Me especializo en soluciones técnicas innovadoras utilizando una amplia gama de tecnologías. Mi experiencia en proyectos independientes y colaboraciones me ha permitido perfeccionar mis habilidades y enfrentar diversos desafíos en el desarrollo web.",
     "title2": "Pensar. Crear. Iterar.",
-    "subtitle2": "Durante este tiempo he trabajado en todas las capas de códigos, desde la base de datos hasta la interfaz de usuario. También he estado involucrado en todas las etapas del ciclo de vida de un producto, desde la conceptualización y el diseño hasta la implementación en producción y soporte."
-
+    "subtitle2": "Durante este tiempo he trabajado en todas las capas de códigos, desde la base de datos hasta la interfaz de usuario. También he estado involucrado en todas las etapas del ciclo de vida de un producto, desde la conceptualización y el diseño hasta la implementación en producción y soporte.",
+    "service1Title": "Desarrollo Web/Móvil",
+    "service1Description": "Cualquiera que sea la escala de su negocio, puedo proporcionarle un ciclo de vida de desarrollo de alta calidad para sitios web, soluciones de comercio electrónico, aplicaciones web y también si necesita solo desarrollo front-end o backend.",
+    "service2Title": "Investigación/Diseño UX",
+    "service2Description": "Siempre que tenga experiencia en cualquier proyecto que necesite un diseño de UX, investigación, aplicación para tener una alta tasa de conversiones y clientes potenciales, puedo ayudarlo en todo el viaje del producto, desde la investigación, el diseño de la interfaz de usuario hasta el lanzamiento de prototipos.",
+    "service3Title": "Consultoría técnica",
+    "service3Description": "Durante mi experiencia he trabajado en todas las capas de códigos, desde el diseño hasta el lanzamiento para pequeñas empresas o startups, pongo esfuerzos que abarcan todo el ciclo de vida del producto: estrategia, diseño, desarrollo."
   },
   "Navbar": {
     "about": "SOBRE MI",
