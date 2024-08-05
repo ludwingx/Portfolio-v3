@@ -1,9 +1,9 @@
 'use client';
 import React from 'react';
 import { useRouter, usePathname } from '../../navigation'; // Ajusta según tu estructura de proyecto
-import { IconButton, Tooltip, Typography } from '@mui/material';
+import { IconButton, Typography } from '@mui/material';
 import TranslateIcon from '@mui/icons-material/Translate';
-import { useLocale } from 'next-intl'; // Asegúrate de que 'next-intl' esté correctamente configurado para manejar locales
+import { useLocale, useTranslations } from 'next-intl'; // Asegúrate de que 'next-intl' esté correctamente configurado para manejar locales
 
 // Define un tipo para las claves de locales
 type Locale = 'en' | 'es';
@@ -12,6 +12,7 @@ const LanguageSwitcher = () => {
   const locale = useLocale() as Locale; // Asegúrate de que useLocale devuelva un valor válido para el tipo Locale
   const router = useRouter();
   const pathname = usePathname();
+  const t = useTranslations('LanguageSwitcher');
 
   // Define el objeto locales con las claves específicas
   const locales: { [key in Locale]: string } = {
@@ -24,7 +25,6 @@ const LanguageSwitcher = () => {
   };
 
   return (
-    <Tooltip title="Change Language">
       <IconButton
         color="inherit"
         aria-label="language"
@@ -35,7 +35,6 @@ const LanguageSwitcher = () => {
           {locales[locale]}
         </Typography>
       </IconButton>
-    </Tooltip>
   );
 };
 

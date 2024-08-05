@@ -1,12 +1,18 @@
 {
   "Home": {
     "title": "Soy Ludwing 👋, un Desarrollador Web Full Stack",
-    "subtitle": "Me especializo en soluciones técnicas innovadoras utilizando una amplia gama de tecnologías. Mi experiencia en proyectos independientes y colaboraciones me ha permitido perfeccionar mis habilidades y enfrentar diversos desafíos en el desarrollo web."
+    "subtitle": "Me especializo en soluciones técnicas innovadoras utilizando una amplia gama de tecnologías. Mi experiencia en proyectos independientes y colaboraciones me ha permitido perfeccionar mis habilidades y enfrentar diversos desafíos en el desarrollo web.",
+    "title2": "Pensar. Crear. Iterar.",
+    "subtitle2": "Durante este tiempo he trabajado en todas las capas de códigos, desde la base de datos hasta la interfaz de usuario. También he estado involucrado en todas las etapas del ciclo de vida de un producto, desde la conceptualización y el diseño hasta la implementación en producción y soporte."
+
   },
   "Navbar": {
     "about": "SOBRE MI",
     "portfolio": "PORTAFOLIO",
     "services": "SERVICIOS",
     "contact": "CONTÁCTAME"
+  },
+  "LanguageSwitcher": {
+    "tootTipTitle": "Cambiar idioma"
   }
 }

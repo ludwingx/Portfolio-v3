@@ -1,11 +1,14 @@
+// components/navbar/NavbarServer.tsx
+
 import { useTranslations } from "next-intl";
 import Link from "next/link";
-import ThemeSwitcher from "../btnThemeChange/ThemeSwitcher";
-import LanguageSwitcher from "../btnLanguageChange/LanguageSwitcher";
 import { AppBar, Toolbar, Typography, Box } from "@mui/material";
 import styles from "./Navbar.module.css";
+import MobileMenu from "./MobileMenu";
+import LanguageSwitcher from "../btnLanguageChange/LanguageSwitcher";
+import ThemeSwitcher from "../btnThemeChange/ThemeSwitcher";
 
-const Navbar = () => {
+const NavbarServer: React.FC = () => {
   const t = useTranslations("Navbar");
 
   const navLinks = [
@@ -17,25 +20,30 @@ const Navbar = () => {
 
   return (
     <AppBar position="static" className={styles.navbar} sx={{ backgroundColor: "var(--navbar-background)", color: "var(--navbar-text)" }}>
-      <Toolbar sx={{ backgroundColor: "var(--navbar-background)", color: "var(--navbar-text)" }}>
-        <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-          <Link href="/" passHref className={styles.navbarLink}>
-            LUDWING
+      <Toolbar>
+        <Typography variant="h6" sx={{ flexGrow: 1 }} className={styles.navbarLink}>
+          <Link href="/" passHref>
+            <Typography component="span" className={styles.navbarLink} sx={{ textDecoration: 'none', color: 'inherit' }}>
+              LUDWING
+            </Typography>
           </Link>
         </Typography>
-
-        <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
+        <Box sx={{ display: { xs: 'none', md: 'flex' }, gap: 2 }}>
           {navLinks.map(({ href, label }) => (
             <Link key={href} href={href} passHref>
-              <Typography className={styles.navbarLink}>{label}</Typography>
+              <Typography component="span" className={styles.navbarLink} sx={{ textDecoration: 'none', color: 'inherit' }}>
+                {label}
+              </Typography>
             </Link>
           ))}
+          {/* Aquí puedes incluir LanguageSwitcher y ThemeSwitcher si son compatibles con renderizado del servidor */}
           <LanguageSwitcher />
           <ThemeSwitcher />
         </Box>
+        <MobileMenu navLinks={navLinks} /> {/* Pasar las traducciones como propiedad */}
       </Toolbar>
     </AppBar>
   );
 };
 
-export default Navbar;
+export default NavbarServer;

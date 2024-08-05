@@ -1,23 +1,14 @@
-/* styles/Navbar.module.css */
-
-.navbarLink, .menuItem {
+.navbar {
+  background-color: var(--navbar-background);
   color: var(--navbar-text);
+}
+
+.navbarLink {
   text-decoration: none;
-  padding: 8px 16px;
-}
-
-/* Estilo para enlaces */
-.navbarLink:hover, .menuItem:hover {
-  color: var(--navbar-text-hover);
-  background-color: var(--navbar-background-hover);
-}
-
-.navbarButton {
-  color: var(--navbar-text);
+  color: inherit;
   transition: color 0.3s;
 }
 
-/* Estilo para botones (si aplican) */
-.navbarButton:hover {
-  color: var(--navbar-text-hover);
+.navbarLink:hover {
+  color: var(--navbar-text-hover); /* Esta es la variable correcta */
 }

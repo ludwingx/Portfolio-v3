@@ -1,20 +1,24 @@
 import { NextIntlClientProvider } from 'next-intl';
-import Footer from "@/components/Footer";
+import Footer from "@/components/footer/Footer";
 import Navbar from "@/components/navbar/Navbar";
 import "./globals.css";
 import { ThemeProvider } from "next-themes";
+import { getLocale, getMessages } from 'next-intl/server';
 
-export default function RootLayout({
-  children,
-  params: { locale }
+export default async function RootLayout({
+
+  children
 }: {
   children: React.ReactNode;
-  params: { locale: string };
 }) {
+  const locale = await getLocale();
+  const messages = await getMessages();
+
+
   return (
     <html lang={locale} suppressHydrationWarning={true}>
       <body>
-        <NextIntlClientProvider locale={locale}>
+        <NextIntlClientProvider messages={messages} locale={locale}>
           <ThemeProvider enableSystem={true} attribute="class">
             <Navbar />
             <main>{children}</main>
