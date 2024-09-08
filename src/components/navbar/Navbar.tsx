@@ -1,6 +1,4 @@
-// components/navbar/NavbarServer.tsx
-
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 import Link from "next/link";
 import { AppBar, Toolbar, Typography, Box } from "@mui/material";
 import styles from "./Navbar.module.css";
@@ -10,28 +8,29 @@ import ThemeSwitcher from "../btnThemeChange/ThemeSwitcher";
 
 const NavbarServer: React.FC = () => {
   const t = useTranslations("Navbar");
+  const locale = useLocale(); // Obtén el idioma actual
 
   const navLinks = [
-    { href: "/", label: t("about") },
-    { href: "/portfolio", label: t("portfolio") },
-    { href: "/services", label: t("services") },
-    { href: "/contact", label: t("contact") },
+    { href: `/${locale}/aboutme`, label: t("about") },
+    { href: `/${locale}/portfolio`, label: t("portfolio") },
+    { href: `/${locale}/services`, label: t("services") },
+    { href: `/${locale}/contact`, label: t("contact") },
   ];
 
   return (
     <AppBar position="static" className={styles.navbar} sx={{ backgroundColor: "var(--navbar-background)", color: "var(--navbar-text)" }}>
       <Toolbar>
         <Typography variant="h6" sx={{ flexGrow: 1 }} className={styles.navbarLink}>
-          <Link href="/" passHref>
+          <Link href={`/${locale}`} passHref>
             <Typography component="span" className={styles.navbarLink} sx={{ textDecoration: 'none', color: 'inherit' }}>
               LUDWING
             </Typography>
           </Link>
         </Typography>
-        <Box sx={{ display: { xs: 'none', md: 'flex' }, gap: 2 }}>
+        <Box sx={{ display: { xs: 'none', md: 'flex', alignItems: 'center' }, gap: 2 }}>
           {navLinks.map(({ href, label }) => (
             <Link key={href} href={href} passHref>
-              <Typography component="span" className={styles.navbarLink} sx={{ textDecoration: 'none', color: 'inherit' }}>
+              <Typography component="span" className={styles.navbarLink} sx={{  }}>
                 {label}
               </Typography>
             </Link>

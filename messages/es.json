@@ -1,23 +1,20 @@
 {
   "Home": {
-    "title": "Soy Ludwing 👋, un Desarrollador Web Full Stack",
-    "subtitle": "Me especializo en soluciones técnicas innovadoras utilizando una amplia gama de tecnologías. Mi experiencia en proyectos independientes y colaboraciones me ha permitido perfeccionar mis habilidades y enfrentar diversos desafíos en el desarrollo web.",
-    "title2": "Pensar. Crear. Iterar.",
-    "subtitle2": "Durante este tiempo he trabajado en todas las capas de códigos, desde la base de datos hasta la interfaz de usuario. También he estado involucrado en todas las etapas del ciclo de vida de un producto, desde la conceptualización y el diseño hasta la implementación en producción y soporte.",
+    "title": "Hola, soy Ludwing 👋, Desarrollador Web Full Stack",
+    "subtitle": "Me especializo en crear soluciones web innovadoras utilizando una variedad de tecnologías. Mi experiencia en el campo me ha ayudado a perfeccionar mis habilidades y a enfrentar diversos retos en el desarrollo web.",
+    "title2": "Innovar. Desarrollar. Evolucionar.",
+    "subtitle2": "He trabajado en el desarrollo de sistemas de principio a fin. Desde la planificación y el diseño de bases de datos hasta la creación de interfaces de usuario intuitivas y la implementación continua, me aseguro de que cada etapa del proyecto sea exitosa.",
     "service1Title": "Desarrollo Web/Móvil",
-    "service1Description": "Cualquiera que sea la escala de su negocio, puedo proporcionarle un ciclo de vida de desarrollo de alta calidad para sitios web, soluciones de comercio electrónico, aplicaciones web y también si necesita solo desarrollo front-end o backend.",
+    "service1Description": "Creo sitios web y aplicaciones móviles de alta calidad que se ajustan a las necesidades de tu negocio. Ya sea que necesites mejorar tu presencia en línea o desarrollar una nueva aplicación, me encargo tanto del front-end como del back-end.",
     "service2Title": "Investigación/Diseño UX",
-    "service2Description": "Siempre que tenga experiencia en cualquier proyecto que necesite un diseño de UX, investigación, aplicación para tener una alta tasa de conversiones y clientes potenciales, puedo ayudarlo en todo el viaje del producto, desde la investigación, el diseño de la interfaz de usuario hasta el lanzamiento de prototipos.",
-    "service3Title": "Consultoría técnica",
-    "service3Description": "Durante mi experiencia he trabajado en todas las capas de códigos, desde el diseño hasta el lanzamiento para pequeñas empresas o startups, pongo esfuerzos que abarcan todo el ciclo de vida del producto: estrategia, diseño, desarrollo."
+    "service2Description": "Trabajo para mejorar la experiencia del usuario con diseños intuitivos y efectivos. Investigo y diseño interfaces para asegurar que los usuarios disfruten de una experiencia fluida y satisfactoria, lo que incrementa la satisfacción y la retención.",
+    "service3Title": "Consultoría Técnica",
+    "service3Description": "Brindo apoyo en cada fase del proyecto, desde el análisis de requisitos y el diseño hasta el desarrollo, pruebas e implementación. Me aseguro de ofrecer soluciones completas y adaptadas a tus necesidades específicas."
   },
   "Navbar": {
-    "about": "SOBRE MI",
+    "about": "SOBRE MÍ",
     "portfolio": "PORTAFOLIO",
     "services": "SERVICIOS",
     "contact": "CONTÁCTAME"
-  },
-  "LanguageSwitcher": {
-    "tootTipTitle": "Cambiar idioma"
   }
 }

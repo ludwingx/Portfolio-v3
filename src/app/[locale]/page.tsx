@@ -1,20 +1,14 @@
-import { Box, Typography, Container } from "@mui/material";
+import { Box, Typography, Container, Button, Link } from "@mui/material";
 import { useTranslations } from 'next-intl';
+
+import AutoAwesomeIcon from '@mui/icons-material/AutoAwesome';
+import styles from '@/styles/Button.module.css';
 
 export default function Home() {
   const t = useTranslations('Home');
 
   return (
     <Container
-      maxWidth="md"
-      sx={{
-        padding: 2,
-        '@media (max-width: 600px)': {
-          padding: 1,
-        },
-        backgroundColor: 'var(--background-color)', // Aplicar el color de fondo del tema
-        color: 'var(--text-color)', // Aplicar el color del texto del tema
-      }}
     >
       <Box
         sx={{
@@ -153,6 +147,19 @@ export default function Home() {
               {t('service3Description')}
             </Typography>
           </Box>
+        </Box>
+        <Box sx={{ textAlign: "center" , mt: 7, mb: 4 }} >
+          <Typography variant="h4">
+            Obras escogidas
+          </Typography>
+          <Typography>
+            Explora mis proyectos, cada uno realizado con pasión y entregado a tiempo, superando las expectativas.
+          </Typography>
+        </Box>
+        <Box sx={{ textAlign: "center" , mt: 7, mb: 4 }}>
+            <Button variant="contained" href="/contact" startIcon={<AutoAwesomeIcon />} endIcon={<AutoAwesomeIcon />}>
+              Trabajemos Juntos
+            </Button>
         </Box>
       </Box>
     </Container>

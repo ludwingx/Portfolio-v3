@@ -1,6 +1,6 @@
 .navbar {
-  background-color: var(--navbar-background);
-  color: var(--navbar-text);
+  background-color: var(--navbarBackground);
+  color: var(--navbarText);
 }
 
 .navbarLink {
@@ -10,5 +10,5 @@
 }
 
 .navbarLink:hover {
-  color: var(--navbar-text-hover); /* Esta es la variable correcta */
+  color: var(--navbarTextHover); /* Esta es la variable correcta */
 }
