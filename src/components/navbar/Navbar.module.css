@@ -1,6 +1,5 @@
 .navbar {
-  background-color: var(--navbarBackground);
-  color: var(--navbarText);
+  box-shadow: none;
 }
 
 .navbarLink {

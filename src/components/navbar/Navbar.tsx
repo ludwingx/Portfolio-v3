@@ -12,7 +12,7 @@ const NavbarServer: React.FC = () => {
 
   const navLinks = [
     { href: `/${locale}/aboutme`, label: t("about") },
-    { href: `/${locale}/portfolio`, label: t("portfolio") },
+    { href: `/${locale}/projects`, label: t("portfolio") },
     { href: `/${locale}/services`, label: t("services") },
     { href: `/${locale}/contact`, label: t("contact") },
   ];

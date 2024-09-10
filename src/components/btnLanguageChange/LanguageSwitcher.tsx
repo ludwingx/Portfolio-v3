@@ -12,7 +12,6 @@ const LanguageSwitcher = () => {
   const locale = useLocale() as Locale; // Asegúrate de que useLocale devuelva un valor válido para el tipo Locale
   const router = useRouter();
   const pathname = usePathname();
-  const t = useTranslations('LanguageSwitcher');
 
   // Define el objeto locales con las claves específicas
   const locales: { [key in Locale]: string } = {

@@ -15,7 +15,6 @@ const Footer = () => {
           textDecorationColor: "black", // Color del subrayado
           textDecorationThickness: "2px", // Grosor del subrayado
           textUnderlineOffset: "4px", // Distancia entre texto y subrayado
-          color: "black",
           fontWeight: "bold",
           cursor: "pointer",
         }}
@@ -24,7 +23,7 @@ const Footer = () => {
       </Link>{" "}
       con mucho ❤️ y sin ☕
     </Typography>
-    <Typography>© 2022</Typography>
+    <Typography>© 2024</Typography>
   </Box>
 </Container>
 

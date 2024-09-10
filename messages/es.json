@@ -16,5 +16,59 @@
     "portfolio": "PORTAFOLIO",
     "services": "SERVICIOS",
     "contact": "CONTÁCTAME"
+  },
+  "ProjectPage": {
+    "title": "Proyectos",
+    "description": "Conoce algunos de los proyectos en los que he estado involucrado. Cada proyecto tiene una descripción detallada y una imagen de muestra."
+  },
+  "Projects": {
+    "project1": [
+      {
+        "title": "Aplicación Nativa y Web para la Farmacia Santa Rosita",
+        "name": "Santa Rosita Manager",
+        "description": "Aplicación en desarrollo para optimizar y gestionar los procesos internos de la farmacia, mejorando la eficiencia en el manejo de inventarios, pedidos y atención al cliente.",
+        "technologies": ["Expo", "TypeScript", "CSS", "Astro (planificado)", "NestJS (planificado)", "PostgreSQL (planificado)"],
+        "type": ["Aplicación Móvil", "Aplicación Web" ],
+        "imageUrl": "/img/farmaciaSantaRosita.png",
+        "imageLogoUrl": "/img/srappIcon.svg",
+        "inDevelopment": true
+      }
+    ],
+    "project2": [
+      {
+        "title": "Aplicación Web para el evento AstroboyXL Listening Party",
+        "name": "Astroboyxl.shop",
+        "description": "Aplicación web para el evento AstroboyXL LISTENING PARTY, para la compra de entradas, gestion de usuarios y compra de productos exclusivos de la tienda Trucho.",
+        "technologies": ["HTML", "CSS", "JavaScript", "React", "NextJS", "Typescript", "Prisma", "Vercel", "PostgreSQL"],
+        "type": ["Aplicación Web"],
+        "imageUrl": "/img/mockup/astroboy.svg",
+        "imageLogoUrl": "/img/astroicon.svg",
+        "inDevelopment": false
+      }
+    ],
+    "project3": [
+      {
+        "title": "Aplicación Móvil Web para el CEA",
+        "name": "App CEA",
+        "description": "App móvil web para el control y seguimiento de animales silvestres rescatados por el CEA del Gobierno Autonomo Departamental de Santa Cruz",
+        "technologies": ["HTML", "TypeScript", "SCSS", "Ionic", "PHP", "MySQL", "Bootstrap"],
+        "type": ["Aplicación Móvil"],
+        "imageUrl": "/img/mockup/appcea.svg",
+        "imageLogoUrl": "/img/appceaIcon.svg",
+        "inDevelopment": false
+      }
+    ],
+    "project4": [
+      {
+        "title": "Landing Page de mi primer portafolio profesional",
+        "name": "Portafolio",
+        "description": "Landing Page para mi primer portafolio personal, donde pude mostrar mis proyectos y habilidades.",
+        "technologies": ["Angular", "TypeScript", "SCSS", "Bootstrap"],
+        "type": ["Landing Page"],
+        "imageUrl": "/img/mockup/portfoliov2.svg",
+        "imageLogoUrl": "/img/portfoliov2icon.svg",
+        "inDevelopment": false
+      }
+    ]
   }
 }
