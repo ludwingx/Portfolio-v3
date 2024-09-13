@@ -1,15 +1,16 @@
-import { Box, Typography, Container, Button, Link } from "@mui/material";
-import { useTranslations } from 'next-intl';
-
-import AutoAwesomeIcon from '@mui/icons-material/AutoAwesome';
-import styles from '@/styles/Button.module.css';
+import { Box, Typography, Container, Button, Grid } from "@mui/material";
+import { useMessages, useTranslations } from "next-intl";
+import AutoAwesomeIcon from "@mui/icons-material/AutoAwesome";
+import styles from "@/styles/Button.module.css";
+import ProjectCard from "./projects/ProjectCard";
 
 export default function Home() {
-  const t = useTranslations('Home');
+  const t = useTranslations("Home");
+  const messages = useMessages();
+  const projects = Object.keys(messages.Projects);
 
   return (
-    <Container
-    >
+    <Container>
       <Box
         sx={{
           display: "flex",
@@ -31,17 +32,12 @@ export default function Home() {
             maxWidth: "800px",
           }}
         >
-          <Typography
-            variant="h2"
-            gutterBottom
-            sx={{ fontWeight: "bold" }}
-          >
-            {t('title')}
+          <Typography variant="h2" gutterBottom sx={{ fontWeight: "bold" }}>
+            {t("title")}
           </Typography>
-          <Typography variant="h5">
-            {t('subtitle')}
-          </Typography>
+          <Typography variant="h5">{t("subtitle")}</Typography>
         </Box>
+
         <Box
           sx={{
             mt: 8,
@@ -51,13 +47,10 @@ export default function Home() {
             paddingBottom: 5,
           }}
         >
-          <Typography variant="h3">
-            {t('title2')}
-          </Typography>
-          <Typography variant="h5">
-            {t('subtitle2')}
-          </Typography>
+          <Typography variant="h3">{t("title2")}</Typography>
+          <Typography variant="h5">{t("subtitle2")}</Typography>
         </Box>
+
         {/* Servicios */}
         <Box
           sx={{
@@ -74,92 +67,113 @@ export default function Home() {
             sx={{
               flex: 1,
               p: 4,
-              border: "1px solid var(--navbar-background)", // Aplicar borde del tema
+              border: "1px solid var(--navbar-background)",
               borderRadius: 2,
               boxShadow: 2,
               textAlign: "center",
-              backgroundColor: "var(--background-color)", // Aplicar color de fondo del tema
+              backgroundColor: "var(--background-color)",
               minWidth: { xs: "100%", md: "300px" },
               maxWidth: "400px",
               transition: "background-color 0.3s",
-              '&:hover': {
-                backgroundColor: 'var(--navbar-background-hover)', // Aplicar color de fondo al pasar el ratón
+              "&:hover": {
+                backgroundColor: "var(--navbar-background-hover)",
               },
             }}
           >
             <Typography variant="h6" sx={{ fontWeight: "bold" }} gutterBottom>
               <i className="fa fa-code" aria-hidden="true"></i>
-              {t('service1Title')}
+              {t("service1Title")}
             </Typography>
-            <Typography>
-              {t('service1Description')}
-            </Typography>
+            <Typography>{t("service1Description")}</Typography>
           </Box>
 
           <Box
             sx={{
               flex: 1,
               p: 4,
-              border: "1px solid var(--navbar-background)", // Aplicar borde del tema
+              border: "1px solid var(--navbar-background)",
               borderRadius: 2,
               boxShadow: 2,
               textAlign: "center",
-              backgroundColor: "var(--background-color)", // Aplicar color de fondo del tema
+              backgroundColor: "var(--background-color)",
               minWidth: { xs: "100%", md: "300px" },
               maxWidth: "400px",
               transition: "background-color 0.3s",
-              '&:hover': {
-                backgroundColor: 'var(--navbar-background-hover)', // Aplicar color de fondo al pasar el ratón
+              "&:hover": {
+                backgroundColor: "var(--navbar-background-hover)",
               },
             }}
           >
             <Typography variant="h6" sx={{ fontWeight: "bold" }} gutterBottom>
               <i className="fa fa-pencil" aria-hidden="true"></i>
-              {t('service2Title')}
+              {t("service2Title")}
             </Typography>
-            <Typography>
-              {t('service2Description')}
-            </Typography>
+            <Typography>{t("service2Description")}</Typography>
           </Box>
 
           <Box
             sx={{
               flex: 1,
               p: 4,
-              border: "1px solid var(--navbar-background)", // Aplicar borde del tema
+              border: "1px solid var(--navbar-background)",
               borderRadius: 2,
               boxShadow: 2,
               textAlign: "center",
-              backgroundColor: "var(--background-color)", // Aplicar color de fondo del tema
+              backgroundColor: "var(--background-color)",
               minWidth: { xs: "100%", md: "300px" },
               maxWidth: "400px",
               transition: "background-color 0.3s",
-              '&:hover': {
-                backgroundColor: 'var(--navbar-background-hover)', // Aplicar color de fondo al pasar el ratón
+              "&:hover": {
+                backgroundColor: "var(--navbar-background-hover)",
               },
             }}
           >
             <Typography variant="h6" sx={{ fontWeight: "bold" }} gutterBottom>
               <i className="fa fa-cogs" aria-hidden="true"></i>
-              {t('service3Title')}
+              {t("service3Title")}
             </Typography>
-            <Typography>
-              {t('service3Description')}
-            </Typography>
+            <Typography>{t("service3Description")}</Typography>
           </Box>
         </Box>
-        <Box sx={{ textAlign: "center" , mt: 7, mb: 4 }} >
-          <Typography variant="h4">
-            Obras escogidas
-          </Typography>
+
+        <Box sx={{ textAlign: "center", mt: 7, mb: 4 }}>
+          <Typography variant="h4">Obras escogidas</Typography>
           <Typography>
-            Explora mis proyectos, cada uno realizado con pasión y entregado a tiempo, superando las expectativas.
+            Explora mis proyectos, cada uno realizado con pasión y entregado a
+            tiempo, superando las expectativas.
           </Typography>
+          <Box sx={{ mt: 4 }}>
+            <Grid container spacing={4}>
+              {projects
+                .filter((project) => messages.Projects[project][0]?.favorite)
+                .map((project, index) => (
+                  <Grid item key={index} xs={12} sm={6} md={4}>
+                    <ProjectCard
+                      imageUrl={messages.Projects[project][0].imageUrl}
+                      imageLogoUrl={messages.Projects[project][0].imageLogoUrl}
+                      title={messages.Projects[project][0].title}
+                      description={messages.Projects[project][0].description}
+                      technologies={messages.Projects[project][0].technologies} // Asume que tienes una lista de tecnologías
+                      name={messages.Projects[project][0].name}
+                      type={messages.Projects[project][0].type}
+                      inDevelopment={messages.Projects[project][0].inDevelopment}
+                      url={messages.Projects[project][0].url}
+                    />
+                  </Grid>
+                ))}
+            </Grid>
+          </Box>
         </Box>
-        <Box sx={{ textAlign: "center" , mt: 7, mb: 4 }}>
-            <Button variant="contained" href="/contact" startIcon={<AutoAwesomeIcon />} endIcon={<AutoAwesomeIcon />}>
-              Trabajemos Juntos
-            </Button>
+
+        <Box sx={{ textAlign: "center", mt: 7, mb: 4 }}>
+          <Button
+            variant="contained"
+            href="/contact"
+            startIcon={<AutoAwesomeIcon />}
+            endIcon={<AutoAwesomeIcon />}
+          >
+            Trabajemos Juntos
+          </Button>
         </Box>
       </Box>
     </Container>

@@ -35,6 +35,8 @@ export default function Projects() {
                 name={messages.Projects[project][0].name}
                 type={messages.Projects[project][0].type}
                 inDevelopment={messages.Projects[project][0].inDevelopment}
+                favorite={messages.Projects[project][0].favorite}
+                url={messages.Projects[project][0].url}
               />
             </Grid>
           ))}

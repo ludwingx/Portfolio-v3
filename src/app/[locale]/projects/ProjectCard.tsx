@@ -22,6 +22,8 @@ interface ProjectCardProps {
   name: string;
   type: string[];
   inDevelopment: boolean;
+  favorite: boolean;
+  url: string;
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({
@@ -33,6 +35,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   name,
   type,
   inDevelopment,
+  favorite,
+  url
 }) => {
   return (
     <Card

@@ -31,7 +31,9 @@
         "type": ["Aplicación Móvil", "Aplicación Web" ],
         "imageUrl": "/img/farmaciaSantaRosita.png",
         "imageLogoUrl": "/img/srappIcon.svg",
-        "inDevelopment": true
+        "inDevelopment": true,
+        "favorite": false,
+        "url": "/"
       }
     ],
     "project2": [
@@ -43,7 +45,9 @@
         "type": ["Aplicación Web"],
         "imageUrl": "/img/mockup/astroboy.svg",
         "imageLogoUrl": "/img/astroicon.svg",
-        "inDevelopment": false
+        "inDevelopment": false,
+        "favorite": true,
+        "url": "https://astroboyxl.shop"
       }
     ],
     "project3": [
@@ -55,7 +59,9 @@
         "type": ["Aplicación Móvil"],
         "imageUrl": "/img/mockup/appcea.svg",
         "imageLogoUrl": "/img/appceaIcon.svg",
-        "inDevelopment": false
+        "inDevelopment": false,
+        "favorite": true,
+        "url": "https://appcea.netlify.app"
       }
     ],
     "project4": [
@@ -67,7 +73,9 @@
         "type": ["Landing Page"],
         "imageUrl": "/img/mockup/portfoliov2.svg",
         "imageLogoUrl": "/img/portfoliov2icon.svg",
-        "inDevelopment": false
+        "inDevelopment": false,
+        "favorite": true,
+        "url": "https://portfoliobyludwing.netlify.app/"
       }
     ]
   }
