@@ -2,14 +2,17 @@
   "Home": {
     "title": "Hola, soy Ludwing 👋, Desarrollador Web Full Stack",
     "subtitle": "Me especializo en crear soluciones web innovadoras utilizando una variedad de tecnologías. Mi experiencia en el campo me ha ayudado a perfeccionar mis habilidades y a enfrentar diversos retos en el desarrollo web.",
-    "title2": "Innovar. Desarrollar. Evolucionar.",
+    "title2": "Innovar. Desarrollar. ",
+    "title2r": "Evolucionar.",
     "subtitle2": "He trabajado en el desarrollo de sistemas de principio a fin. Desde la planificación y el diseño de bases de datos hasta la creación de interfaces de usuario intuitivas y la implementación continua, me aseguro de que cada etapa del proyecto sea exitosa.",
     "service1Title": "Desarrollo Web/Móvil",
     "service1Description": "Creo sitios web y aplicaciones móviles de alta calidad que se ajustan a las necesidades de tu negocio. Ya sea que necesites mejorar tu presencia en línea o desarrollar una nueva aplicación, me encargo tanto del front-end como del back-end.",
     "service2Title": "Investigación/Diseño UX",
     "service2Description": "Trabajo para mejorar la experiencia del usuario con diseños intuitivos y efectivos. Investigo y diseño interfaces para asegurar que los usuarios disfruten de una experiencia fluida y satisfactoria, lo que incrementa la satisfacción y la retención.",
     "service3Title": "Consultoría Técnica",
-    "service3Description": "Brindo apoyo en cada fase del proyecto, desde el análisis de requisitos y el diseño hasta el desarrollo, pruebas e implementación. Me aseguro de ofrecer soluciones completas y adaptadas a tus necesidades específicas."
+    "service3Description": "Brindo apoyo en cada fase del proyecto, desde el análisis de requisitos y el diseño hasta el desarrollo, pruebas e implementación. Me aseguro de ofrecer soluciones completas y adaptadas a tus necesidades específicas.",
+    "title3": "Obras escogidas",
+    "subtitle3": "Explora mis proyectos, cada uno realizado con pasión y entregado a tiempo, superando las expectativas"
   },
   "Navbar": {
     "about": "SOBRE MÍ",
@@ -17,6 +20,7 @@
     "services": "SERVICIOS",
     "contact": "CONTÁCTAME"
   },
+
   "ProjectPage": {
     "title": "Proyectos",
     "description": "Conoce algunos de los proyectos en los que he estado involucrado. Cada proyecto tiene una descripción detallada y una imagen de muestra."

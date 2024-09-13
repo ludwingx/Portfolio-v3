@@ -14,7 +14,7 @@ export const AppLightTheme: Theme = createTheme({
     secondary: {
       main: '#202020',
     },
-    warning:{
+    warning: {
       main: '#ed6c02',
     },
   },
@@ -23,6 +23,15 @@ export const AppLightTheme: Theme = createTheme({
     fontWeightMedium: 500,
   },
   components: {
+    MuiAppBar: {
+      styleOverrides: {
+        root: {
+          backgroundColor: '#f5f5f5', // Color primario en el tema claro
+          boxShadow: 'none',
+          color: '#101010',
+        },
+      },
+    },
     MuiCard: {
       styleOverrides: {
         root: {
@@ -37,7 +46,6 @@ export const AppLightTheme: Theme = createTheme({
         },
       },
     },
-
     MuiCardContent: {
       styleOverrides: {
         root: {
@@ -65,12 +73,11 @@ export const AppDarkTheme: Theme = createTheme({
     secondary: {
       main: '#272727',
     },
-    warning:{
+    warning: {
       main: '#ffa256',
     },
     background: {
       default: '#000000',
-      paper: '#000000',
     },
   },
   typography: {
@@ -78,6 +85,16 @@ export const AppDarkTheme: Theme = createTheme({
     fontWeightMedium: 500,
   },
   components: {
+    MuiAppBar: {
+      styleOverrides: {
+        root: {
+          backgroundColor: '#000000 !important', // Coincidir con el background.default
+          boxShadow: 'none',
+          backgroundImage: 'none',
+          color: '#ffffff', // Ajusta el color del texto si es necesario
+        },
+      },
+    },
     MuiCard: {
       styleOverrides: {
         root: {

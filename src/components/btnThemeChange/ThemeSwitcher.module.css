@@ -1,10 +1,11 @@
 /* styles/ThemeSwitcher.module.css */
 
 .btnTheme {
-  color: var(--navbar-text) !important;
   transition: color 0.3s ease !important;
+  font-weight: bold;
 }
 
 .btnTheme:hover {
-  color: var(--navbar-text-hover) !important;
+  background-color: #00000000;
+  color: #001c55 /* Esta es la variable correcta */
 }

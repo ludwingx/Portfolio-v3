@@ -1,8 +1,5 @@
-.btnTheme{
-  color: var(--navbar-text) !important;
-  transition: color 0.3s ease !important;
-}
 
-.btnTheme:hover{
-  color: var(--navbar-text-hover) !important;
+.btnTheme:hover {
+  background-color: #00000000 /* Esta es la variable correcta */;
+  color: #001c55 /* Esta es la variable correcta */
 }

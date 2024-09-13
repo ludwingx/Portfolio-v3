@@ -1,15 +1,18 @@
 {
   "Home": {
-    "title": "Hello, I'm Ludwing 👋, Full Stack Web Developer",
+    "title": "Hi, I'm Ludwing 👋, Full Stack Web Developer",
     "subtitle": "I specialize in creating innovative web solutions using a variety of technologies. My experience in the field has helped me hone my skills and tackle various challenges in web development.",
-    "title2": "Innovate. Develop. Evolve.",
-    "subtitle2": "I have worked on system development from start to finish. From planning and designing databases to creating intuitive user interfaces and continuous deployment, I ensure that every stage of the project is successful.",
+    "title2": "Innovate. Develop.",
+    "title2r": "Evolve.",
+    "subtitle2": "I have worked on system development from start to finish. From planning and designing databases to creating intuitive user interfaces and continuous implementation, I ensure that every stage of the project is successful.",
     "service1Title": "Web/Mobile Development",
-    "service1Description": "I create high-quality websites and mobile applications tailored to your business needs. Whether you need to enhance your online presence or develop a new application, I handle both front-end and back-end development.",
-    "service2Title": "UX Research/Design",
-    "service2Description": "I work to improve user experience with intuitive and effective designs. I conduct research and design interfaces to ensure users enjoy a seamless and satisfying experience, increasing satisfaction and retention.",
+    "service1Description": "I create high-quality websites and mobile applications tailored to your business needs. Whether you need to enhance your online presence or develop a new app, I handle both front-end and back-end development.",
+    "service2Title": "Research/UX Design",
+    "service2Description": "I work to improve user experience with intuitive and effective designs. I research and design interfaces to ensure users enjoy a smooth and satisfying experience, increasing satisfaction and retention.",
     "service3Title": "Technical Consulting",
-    "service3Description": "I provide support in every phase of the project, from requirements analysis and design to development, testing, and implementation. I ensure to offer complete solutions tailored to your specific needs."
+    "service3Description": "I provide support at every stage of the project, from requirements analysis and design to development, testing, and implementation. I ensure to deliver comprehensive solutions tailored to your specific needs.",    "title3": "Selected Works",
+    "subtitle3": "Explore my projects, each completed with passion and delivered on time, exceeding expectations"
+
   },
   "Navbar": {
     "about": "ABOUT ME",
@@ -19,31 +22,63 @@
   },
   "ProjectPage": {
     "title": "Projects",
-    "description": "Explore some of the projects I've been involved in. Each project includes a detailed description and a sample image."
+    "description": "Explore some of the projects I have been involved in. Each project includes a detailed description and a sample image."
   },
   "Projects": {
     "project1": [
       {
-        "title": "Native and Web Application for Santa Rosita Pharmacy",
-        "description": "Ongoing development of a native application for internal management (Santa Rosita Manager). Initial implementation in Expo, focusing on interface design and basic functionalities. Planning for the development of the web application using Astro, with a focus on optimization and modularization. Planning for integration with NestJS and PostgreSQL for the backend, ensuring scalability and performance. Preliminary design of the login system.",
+        "title": "Native and Web Application for Farmacia Santa Rosita",
+        "name": "Santa Rosita Manager",
+        "description": "Application in development to optimize and manage internal pharmacy processes, improving efficiency in inventory management, orders, and customer service.",
         "technologies": ["Expo", "TypeScript", "CSS", "Astro (planned)", "NestJS (planned)", "PostgreSQL (planned)"],
-        "imageUrl": "/public/projects/farmaciaSantaRosita.png"
+        "type": ["Mobile Application", "Web Application"],
+        "imageUrl": "/img/farmaciaSantaRosita.png",
+        "imageLogoUrl": "/img/srappIcon.svg",
+        "inDevelopment": true,
+        "favorite": false,
+        "url": "/"
       }
     ],
     "project2": [
       {
         "title": "Web Application for the AstroboyXL Listening Party Event",
-        "description": "Development of a web application for the AstroboyXL LISTENING PARTY event, facilitating user registration, ticket purchases, and the acquisition of exclusive products from the Trucho clothing store. I used PostgreSQL for the database and Prisma for the ORM, deploying the application on Vercel and acquiring the domain on Hostinger: astroboyxl.shop.",
+        "name": "Astroboyxl.shop",
+        "description": "Web application for the AstroboyXL LISTENING PARTY event, for ticket purchase, user management, and buying exclusive products from the Trucho store.",
         "technologies": ["HTML", "CSS", "JavaScript", "React", "NextJS", "Typescript", "Prisma", "Vercel", "PostgreSQL"],
-        "imageUrl": "/public/projects/astroboyxl.png"
+        "type": ["Web Application"],
+        "imageUrl": "/img/mockup/astroboy.svg",
+        "imageLogoUrl": "/img/astroicon.svg",
+        "inDevelopment": false,
+        "favorite": true,
+        "url": "https://astroboyxl.shop"
       }
     ],
     "project3": [
       {
-        "title": "Facial Recognition with OpenCV - Technology Fair Project",
-        "description": "Development of a facial recognition system using OpenCV, a computer vision library based on Python. Participated in a technology fair at the Jesús María Technical Institute to present the project. Selected as a representative for the fair organized by the Departmental Directorate of Educational Management of the Autonomous Departmental Government of Santa Cruz. Recognized as the winner in the Technology Development category at the Departmental Education Week fair, organized by the Departmental Directorate of Educational Management.",
-        "technologies": ["Python", "OpenCv"],
-        "imageUrl": "/public/projects/appCEA.png"
+        "title": "Mobile Web Application for CEA",
+        "name": "App CEA",
+        "description": "Mobile web app for the control and monitoring of wild animals rescued by the CEA of the Autonomous Departmental Government of Santa Cruz.",
+        "technologies": ["HTML", "TypeScript", "SCSS", "Ionic", "PHP", "MySQL", "Bootstrap"],
+        "type": ["Mobile Application"],
+        "imageUrl": "/img/mockup/appcea.svg",
+        "imageLogoUrl": "/img/appceaIcon.svg",
+        "inDevelopment": false,
+        "favorite": true,
+        "url": "https://appcea.netlify.app"
+      }
+    ],
+    "project4": [
+      {
+        "title": "Landing Page of My First Professional Portfolio",
+        "name": "Portfolio",
+        "description": "Landing Page for my first personal portfolio, where I could showcase my projects and skills.",
+        "technologies": ["Angular", "TypeScript", "SCSS", "Bootstrap"],
+        "type": ["Landing Page"],
+        "imageUrl": "/img/mockup/portfoliov2.svg",
+        "imageLogoUrl": "/img/portfoliov2icon.svg",
+        "inDevelopment": false,
+        "favorite": true,
+        "url": "https://portfoliobyludwing.netlify.app/"
       }
     ]
   }

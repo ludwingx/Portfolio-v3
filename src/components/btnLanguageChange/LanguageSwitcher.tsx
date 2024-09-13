@@ -1,10 +1,10 @@
 'use client';
 import React from 'react';
 import { useRouter, usePathname } from '../../navigation'; // Ajusta según tu estructura de proyecto
-import { IconButton, Typography } from '@mui/material';
+import { IconButton, Typography, Box } from '@mui/material';
 import TranslateIcon from '@mui/icons-material/Translate';
 import { useLocale, useTranslations } from 'next-intl'; // Asegúrate de que 'next-intl' esté correctamente configurado para manejar locales
-
+import styles from './LanguageSwitcher.module.css';
 // Define un tipo para las claves de locales
 type Locale = 'en' | 'es';
 
@@ -24,8 +24,8 @@ const LanguageSwitcher = () => {
   };
 
   return (
-      <IconButton
-        color="inherit"
+    <Box >
+            <IconButton className={styles.btnTheme}
         aria-label="language"
         onClick={() => handleLocaleChange(locale === 'en' ? 'es' : 'en')} // Cambia entre inglés y español
       >
@@ -34,6 +34,7 @@ const LanguageSwitcher = () => {
           {locales[locale]}
         </Typography>
       </IconButton>
+    </Box>
   );
 };
 

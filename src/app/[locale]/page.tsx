@@ -47,7 +47,7 @@ export default function Home() {
             paddingBottom: 5,
           }}
         >
-          <Typography variant="h3">{t("title2")}</Typography>
+          <Typography variant="h3">{t("title2")} <span style={{ textDecoration: "underline" }}>{t("title2r")}</span></Typography>
           <Typography variant="h5">{t("subtitle2")}</Typography>
         </Box>
 
@@ -137,10 +137,9 @@ export default function Home() {
         </Box>
 
         <Box sx={{ textAlign: "center", mt: 7, mb: 4 }}>
-          <Typography variant="h4">Obras escogidas</Typography>
+          <Typography variant="h4">{t("title3")}</Typography>
           <Typography>
-            Explora mis proyectos, cada uno realizado con pasión y entregado a
-            tiempo, superando las expectativas.
+            {t("subtitle3")}
           </Typography>
           <Box sx={{ mt: 4 }}>
             <Grid container spacing={4}>

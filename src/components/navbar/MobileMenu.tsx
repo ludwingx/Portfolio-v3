@@ -1,7 +1,7 @@
 "use client"; // Directiva para componentes del lado del cliente
 
 import React from "react";
-import { Drawer, IconButton, Box, List, ListItem, ListItemText, Divider } from "@mui/material";
+import { Drawer, IconButton, Box, List, ListItem, Grid, ListItemText, Divider } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import styles from "./Navbar.module.css";
 import LanguageSwitcher from "../btnLanguageChange/LanguageSwitcher";
@@ -32,8 +32,16 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ navLinks }) => {
             <ListItemText primary={label} />
           </ListItem>
         ))}
-        <LanguageSwitcher />
-        <ThemeSwitcher />
+        <Grid
+          container
+          direction="row"
+          sx={{ ml: 1, mt: 3,
+            alignItems: "center",
+          }}
+>
+          <LanguageSwitcher />
+          <ThemeSwitcher />
+        </Grid>
       </List>
 
 
