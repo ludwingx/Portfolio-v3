@@ -1,10 +1,7 @@
 /* styles/ThemeSwitcher.module.css */
-
-.btnTheme {
-  transition: color 0.3s ease !important;
-  font-weight: bold;
+.btnTheme{
+  color: var(--navbarText) !important
 }
-
 .btnTheme:hover {
   background-color: #00000000;
   color: #001c55 /* Esta es la variable correcta */

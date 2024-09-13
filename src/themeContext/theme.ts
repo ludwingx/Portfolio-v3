@@ -23,6 +23,15 @@ export const AppLightTheme: Theme = createTheme({
     fontWeightMedium: 500,
   },
   components: {
+    MuiButton: {
+      styleOverrides: {
+        root: {
+          '&:hover': {
+            color: '#000000',
+          }
+        },
+      }
+    },
     MuiAppBar: {
       styleOverrides: {
         root: {

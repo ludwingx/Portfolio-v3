@@ -3,7 +3,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Ocultar el contenido antes de que la página esté cargada */
+/* Definir variables para los colores */
 :root {
   /* Colores para el modo claro */
   --backgroundColorLight: #ffffff;
@@ -14,10 +14,10 @@
   --navbarBackgroundHoverLight: #000000;
   --navbarTextHoverLight: #ffffff;
 
-  --btnPrimaryBackgroundColorLight: #000000 !important;
-  --btnPrimaryTextColorLight: #ffffff !important;
-  --btnPrimaryBackgroundColorHoverLight: #000000 !important; /* Ajusta según prefieras */
-  --btnPrimaryTextColorHoverLight: #000000 !important;
+  --btnPrimaryBackgroundColorLight: #000000;
+  --btnPrimaryTextColorLight: #ffffff;
+  --btnPrimaryBackgroundColorHoverLight: #000000; /* Ajusta según prefieras */
+  --btnPrimaryTextColorHoverLight: #000000;
 
   /* Colores para el modo oscuro */
   --backgroundColorDark: #000000;
@@ -28,10 +28,10 @@
   --navbarBackgroundHoverDark: #444444;
   --navbarTextHoverDark: #000000;
 
-  --btnPrimaryBackgroundColorDark: #ffffff !important;
-  --btnPrimaryTextColorDark: #000000 !important;
-  --btnPrimaryBackgroundColorHoverDark: #000000 !important;
-  --btnPrimaryTextColorHoverDark: #ffffff !important;
+  --btnPrimaryBackgroundColorDark: #ffffff;
+  --btnPrimaryTextColorDark: #000000;
+  --btnPrimaryBackgroundColorHoverDark: #000000;
+  --btnPrimaryTextColorHoverDark: #ffffff;
 }
 
 /* Aplicar variables a los temas */

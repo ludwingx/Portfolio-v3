@@ -50,12 +50,12 @@ const ThemeSwitcher: React.FunctionComponent = () => {
         }}
       >
         <MenuItem onClick={() => handleSwitchThemeMode(IThemeMode.LIGHT)} selected={themeMode === IThemeMode.LIGHT}>
-          <LightModeIcon /> Light Mode
+          <LightModeIcon  /> Light Mode
         </MenuItem>
-        <MenuItem onClick={() => handleSwitchThemeMode(IThemeMode.DARK)} selected={themeMode === IThemeMode.DARK}>
-          <DarkModeIcon /> Dark Mode
-        </MenuItem>
-        <MenuItem onClick={() => handleSwitchThemeMode(IThemeMode.SYSTEM)} selected={themeMode === IThemeMode.SYSTEM}>
+        <MenuItem  onClick={() => handleSwitchThemeMode(IThemeMode.DARK)} selected={themeMode === IThemeMode.DARK}>
+          <DarkModeIcon  /> Dark Mode
+        </MenuItem  >
+        <MenuItem  onClick={() => handleSwitchThemeMode(IThemeMode.SYSTEM)} selected={themeMode === IThemeMode.SYSTEM}>
           <SettingsBrightnessIcon /> System Mode
         </MenuItem>
       </Menu>
