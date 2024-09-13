@@ -12,7 +12,9 @@
     "service3Title": "Consultoría Técnica",
     "service3Description": "Brindo apoyo en cada fase del proyecto, desde el análisis de requisitos y el diseño hasta el desarrollo, pruebas e implementación. Me aseguro de ofrecer soluciones completas y adaptadas a tus necesidades específicas.",
     "title3": "Obras escogidas",
-    "subtitle3": "Explora mis proyectos, cada uno realizado con pasión y entregado a tiempo, superando las expectativas"
+    "subtitle3": "Explora mis proyectos, cada uno realizado con pasión y entregado a tiempo, superando las expectativas",
+    "linkApp": "Ver App",
+    "linkGithub": "Codigo en Github"
   },
   "Navbar": {
     "about": "SOBRE MÍ",
@@ -83,4 +85,5 @@
       }
     ]
   }
+
 }

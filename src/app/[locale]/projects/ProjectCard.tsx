@@ -12,6 +12,7 @@ import {
   CardActions,
   CardHeader,
 } from "@mui/material";
+import {useTranslations} from "next-intl";
 import Image from "next/image";
 interface ProjectCardProps {
   imageUrl: string;
@@ -26,6 +27,10 @@ interface ProjectCardProps {
   url: string;
 }
 
+
+const t = useTranslations('Home');
+
+
 const ProjectCard: React.FC<ProjectCardProps> = ({
   imageUrl,
   imageLogoUrl,
@@ -39,6 +44,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   url
 }) => {
   return (
+
     <Card
       sx={{
         position: "relative",
@@ -141,7 +147,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             },
           }}
         >
-          Visitar App
+          {t("linkApp")}
         </Link>
       </CardContent>
     </Card>

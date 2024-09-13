@@ -11,8 +11,9 @@
     "service2Description": "I work to improve user experience with intuitive and effective designs. I research and design interfaces to ensure users enjoy a smooth and satisfying experience, increasing satisfaction and retention.",
     "service3Title": "Technical Consulting",
     "service3Description": "I provide support at every stage of the project, from requirements analysis and design to development, testing, and implementation. I ensure to deliver comprehensive solutions tailored to your specific needs.",    "title3": "Selected Works",
-    "subtitle3": "Explore my projects, each completed with passion and delivered on time, exceeding expectations"
-
+    "subtitle3": "Explore my projects, each completed with passion and delivered on time, exceeding expectations",
+    "linkApp": "View App",
+    "linkGithub": "Code on Github"
   },
   "Navbar": {
     "about": "ABOUT ME",

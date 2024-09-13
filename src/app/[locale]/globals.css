@@ -6,55 +6,73 @@
 /* Definir variables para los colores */
 :root {
   /* Colores para el modo claro */
-  --backgroundColorLight: #ffffff;
-  --textColorLight: #000000;
+  --background-color-light: #ffffff;
+  --text-color-light: #000000;
+  --color-main: #001c55;
+  --navbar-background-light: #ffffff;
+  --navbar-text-light: #000000;
+  --navbar-background-hover-light: #000000;
+  --navbar-text-hover-light: #ffffff;
 
-  --navbarBackgroundLight: #ffffff;
-  --navbarTextLight: #000000;
-  --navbarBackgroundHoverLight: #000000;
-  --navbarTextHoverLight: #ffffff;
-
-  --btnPrimaryBackgroundColorLight: #000000;
-  --btnPrimaryTextColorLight: #ffffff;
-  --btnPrimaryBackgroundColorHoverLight: #000000; /* Ajusta según prefieras */
-  --btnPrimaryTextColorHoverLight: #000000;
+  --btn-primary-background-color-light: #000000;
+  --btn-primary-text-color-light: #ffffff;
+  --btn-primary-background-color-hover-light: #000000; /* Ajusta según prefieras */
+  --btn-primary-text-color-hover-light: #000000;
 
   /* Colores para el modo oscuro */
-  --backgroundColorDark: #000000;
-  --textColorDark: #ffffff;
+  --background-color-dark: #000000;
+  --text-color-dark: #ffffff;
 
-  --navbarBackgroundDark: #333333;
-  --navbarTextDark: #ffffff;
-  --navbarBackgroundHoverDark: #444444;
-  --navbarTextHoverDark: #000000;
+  --navbar-background-dark: #333333;
+  --navbar-text-dark: #ffffff;
+  --navbar-background-hover-dark: #444444;
+  --navbar-text-hover-dark: #000000;
 
-  --btnPrimaryBackgroundColorDark: #ffffff;
-  --btnPrimaryTextColorDark: #000000;
-  --btnPrimaryBackgroundColorHoverDark: #000000;
-  --btnPrimaryTextColorHoverDark: #ffffff;
+  --btn-primary-background-color-dark: #ffffff;
+  --btn-primary-text-color-dark: #000000;
+  --btn-primary-background-color-hover-dark: #000000;
+  --btn-primary-text-color-hover-dark: #ffffff;
 }
 
 /* Aplicar variables a los temas */
 [data-theme='light'] {
-  --navbarBackground: var(--navbarBackgroundLight);
-  --navbarText: var(--navbarTextLight);
-  --navbarBackgroundHover: var(--navbarBackgroundHoverLight);
-  --navbarTextHover: var(--navbarTextHoverLight);
+  --text-color: var(--text-color-light);
+  --background-color: var(--background-color-light);
 
-  --btnPrimaryBackgroundColor: var(--btnPrimaryBackgroundColorLight);
-  --btnPrimaryTextColor: var(--btnPrimaryTextColorLight);
-  --btnPrimaryBackgroundColorHover: var(--btnPrimaryBackgroundColorHoverLight);
-  --btnPrimaryTextColorHover: var(--btnPrimaryTextColorHoverLight);
+  --navbar-background: var(--navbar-background-light);
+  --navbar-text: var(--navbar-text-light);
+  --navbar-background-hover: var(--navbar-background-hover-light);
+  --navbar-text-hover: var(--navbar-text-hover-light);
+
+  --btn-primary-background-color: var(--btn-primary-background-color-light);
+  --btn-primary-text-color: var(--btn-primary-text-color-light);
+  --btn-primary-background-color-hover: var(--btn-primary-background-color-hover-light);
+  --btn-primary-text-color-hover: var(--btn-primary-text-color-hover-light);
 }
 
 [data-theme='dark'] {
-  --navbarBackground: var(--navbarBackgroundDark);
-  --navbarText: var(--navbarTextDark);
-  --navbarBackgroundHover: var(--navbarBackgroundHoverDark);
-  --navbarTextHover: var(--navbarTextHoverDark);
+  --text-color: var(--text-color-dark);
+  --background-color: var(--background-color-dark);
 
-  --btnPrimaryBackgroundColor: var(--btnPrimaryBackgroundColorDark);
-  --btnPrimaryTextColor: var(--btnPrimaryTextColorDark);
-  --btnPrimaryBackgroundColorHover: var(--btnPrimaryBackgroundColorHoverDark);
-  --btnPrimaryTextColorHover: var(--btnPrimaryTextColorHoverDark);
+  --navbar-background: var(--navbar-background-dark);
+  --navbar-text: var(--navbar-text-dark);
+  --navbar-background-hover: var(--navbar-background-hover-dark);
+  --navbar-text-hover: var(--navbar-text-hover-dark);
+
+  --btn-primary-background-color: var(--btn-primary-background-color-dark);
+  --btn-primary-text-color: var(--btn-primary-text-color-dark);
+  --btn-primary-background-color-hover: var(--btn-primary-background-color-hover-dark);
+  --btn-primary-text-color-hover: var(--btn-primary-text-color-hover-dark);
+}
+
+.title-effect {
+  text-decoration: underline;
+  text-decoration-color: var(--color-main);
+  text-decoration-thickness: 3px;
+}
+
+.title-effect:hover {
+  color: var(--color-main);
+  /* Add light shadow */
+
 }

@@ -47,8 +47,8 @@ export default function Home() {
             paddingBottom: 5,
           }}
         >
-          <Typography variant="h3">{t("title2")} <span style={{ textDecoration: "underline" }}>{t("title2r")}</span></Typography>
-          <Typography variant="h5">{t("subtitle2")}</Typography>
+          <Typography variant="h3">{t("title2")} <span className="title-effect">{t("title2r")}</span></Typography>
+          <Typography variant="h5" mt={2}>{t("subtitle2")}</Typography>
         </Box>
 
         {/* Servicios */}
