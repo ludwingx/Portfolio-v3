@@ -1,6 +1,6 @@
-/* styles/ThemeSwitcher.module.css */
-.btnTheme{
-  color: var(--navbarText) !important
+.btnTheme {
+  /* Agrega estilos aquí para el botón */
+  color: var(--color-main); /* Ejemplo de uso de una variable CSS */
 }
 .btnTheme:hover {
   background-color: #00000000;
