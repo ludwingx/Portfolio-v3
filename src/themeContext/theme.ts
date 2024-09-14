@@ -141,12 +141,10 @@ export const AppDarkTheme: Theme = createTheme({
           position: 'relative',
           overflow: 'hidden',
           borderRadius: '10px',
-          boxShadow: 'none',
           transition: 'box-shadow 0.3s ease',
           backgroundColor:  '#000000',
           textAlign: "start",
           boxShadow:  '0 0 15px rgba(0, 28, 85, 0.5)', // Sombra azul al hacer hover
-          transition: 'box-shadow 0.3s ease',
           '&:hover': {
             boxShadow: '0 0 20px rgba(0, 28, 85, 0.7)', // Sombra azul más intensa al hacer hover
           },
