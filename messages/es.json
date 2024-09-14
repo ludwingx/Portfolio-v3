@@ -14,7 +14,8 @@
     "title3": "Obras escogidas",
     "subtitle3": "Explora mis proyectos, cada uno realizado con pasión y entregado a tiempo, superando las expectativas",
     "linkApp": "Ver App",
-    "linkGithub": "Codigo en Github"
+    "linkGithub": "Codigo en Github",
+    "btnText1": "Trabajemos juntos"
   },
   "Navbar": {
     "about": "SOBRE MÍ",
@@ -22,7 +23,10 @@
     "services": "SERVICIOS",
     "contact": "CONTÁCTAME"
   },
-
+  "Footer":{
+    "text": "Desarrollado por",
+    "text2": "con mucho ❤️ y sin ☕"
+  },
   "ProjectPage": {
     "title": "Proyectos",
     "description": "Conoce algunos de los proyectos en los que he estado involucrado. Cada proyecto tiene una descripción detallada y una imagen de muestra."

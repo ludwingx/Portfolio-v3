@@ -26,10 +26,20 @@ export const AppLightTheme: Theme = createTheme({
     MuiButton: {
       styleOverrides: {
         root: {
+          backgroundColor: ' #001c55',
+          color: '#ffffff',
           '&:hover': {
-            color: '#000000',
+            backgroundColor: ' #000000',
+            color: '#ffffff',
           }
         },
+      }
+    },
+    MuiChip:{
+      styleOverrides: {
+        root: {
+          color: '#ffffff',
+        }
       }
     },
     MuiAppBar: {
@@ -47,10 +57,11 @@ export const AppLightTheme: Theme = createTheme({
           position: 'relative',
           overflow: 'hidden',
           borderRadius: '10px',
-          boxShadow: 'none',
+          boxShadow: '0 0 15px rgba(0, 28, 85, 0.5)', // Sombra azul al hacer hover
+          textAlign: "start",
           transition: 'box-shadow 0.3s ease',
           '&:hover': {
-            boxShadow: '0 0 15px rgba(0, 0, 0, 0.6)', // Sombra iluminada negra al hacer hover
+            boxShadow: '0 0 20px rgba(0, 28, 85, 0.7)', // Sombra azul más intensa al hacer hover
           },
         },
       },
@@ -94,6 +105,26 @@ export const AppDarkTheme: Theme = createTheme({
     fontWeightMedium: 500,
   },
   components: {
+    MuiButton:{
+      styleOverrides: {
+        root: {
+           backgroundColor: ' #001c55',
+           color: '#ffffff',
+          '&:hover': {
+            backgroundColor: ' #ffffff',
+            color: '#000000',
+            boxShadow: '0 0 15px rgba(0, 28, 85, 0.8)',
+          }
+        },
+      }
+    },
+    MuiChip:{
+      styleOverrides: {
+        root: {
+          color: '#ffffff',
+        }
+      }
+    },
     MuiAppBar: {
       styleOverrides: {
         root: {
@@ -112,8 +143,12 @@ export const AppDarkTheme: Theme = createTheme({
           borderRadius: '10px',
           boxShadow: 'none',
           transition: 'box-shadow 0.3s ease',
+          backgroundColor:  '#000000',
+          textAlign: "start",
+          boxShadow:  '0 0 15px rgba(0, 28, 85, 0.5)', // Sombra azul al hacer hover
+          transition: 'box-shadow 0.3s ease',
           '&:hover': {
-            boxShadow: '0 0 15px rgba(255, 255, 255, 0.6)', // Sombra iluminada blanca al hacer hover
+            boxShadow: '0 0 20px rgba(0, 28, 85, 0.7)', // Sombra azul más intensa al hacer hover
           },
         },
       },
@@ -121,8 +156,7 @@ export const AppDarkTheme: Theme = createTheme({
     MuiCardContent: {
       styleOverrides: {
         root: {
-          position: 'relative',
-          overflow: 'hidden',
+
         },
       },
     },

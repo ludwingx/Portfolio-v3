@@ -13,13 +13,18 @@
     "service3Description": "I provide support at every stage of the project, from requirements analysis and design to development, testing, and implementation. I ensure to deliver comprehensive solutions tailored to your specific needs.",    "title3": "Selected Works",
     "subtitle3": "Explore my projects, each completed with passion and delivered on time, exceeding expectations",
     "linkApp": "View App",
-    "linkGithub": "Code on Github"
+    "linkGithub": "Code on Github",
+    "btnText1": "Let's work together"
   },
   "Navbar": {
     "about": "ABOUT ME",
     "portfolio": "PORTFOLIO",
     "services": "SERVICES",
     "contact": "CONTACT ME"
+  },
+  "Footer":{
+    "text": "Developed by",
+    "text2": "with a lot of ❤️ and without ☕"
   },
   "ProjectPage": {
     "title": "Projects",

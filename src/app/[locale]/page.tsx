@@ -1,9 +1,11 @@
-import { Box, Typography, Container, Button, Grid } from "@mui/material";
+import { Box, Typography, Container, Button, Grid, Divider } from "@mui/material";
 import { useMessages, useTranslations } from "next-intl";
 import AutoAwesomeIcon from "@mui/icons-material/AutoAwesome";
 import styles from "@/styles/Button.module.css";
 import ProjectCard from "./projects/ProjectCard";
-
+import { FaLaptopCode } from "react-icons/fa";
+import { MdImagesearchRoller  } from "react-icons/md";
+import { FaTools } from "react-icons/fa";
 export default function Home() {
   const t = useTranslations("Home");
   const messages = useMessages();
@@ -53,88 +55,115 @@ export default function Home() {
 
         {/* Servicios */}
         <Box
-          sx={{
-            display: "flex",
-            flexDirection: { xs: "column", md: "row" },
-            gap: 6,
-            mt: 8,
-            maxWidth: "800px",
-            mx: "auto",
-            justifyContent: "center",
-          }}
-        >
-          <Box
-            sx={{
-              flex: 1,
-              p: 4,
-              border: "1px solid var(--navbar-background)",
-              borderRadius: 2,
-              boxShadow: 2,
-              textAlign: "center",
-              backgroundColor: "var(--background-color)",
-              minWidth: { xs: "100%", md: "300px" },
-              maxWidth: "400px",
-              transition: "background-color 0.3s",
-              "&:hover": {
-                backgroundColor: "var(--navbar-background-hover)",
-              },
-            }}
-          >
-            <Typography variant="h6" sx={{ fontWeight: "bold" }} gutterBottom>
-              <i className="fa fa-code" aria-hidden="true"></i>
-              {t("service1Title")}
-            </Typography>
-            <Typography>{t("service1Description")}</Typography>
-          </Box>
-
-          <Box
-            sx={{
-              flex: 1,
-              p: 4,
-              border: "1px solid var(--navbar-background)",
-              borderRadius: 2,
-              boxShadow: 2,
-              textAlign: "center",
-              backgroundColor: "var(--background-color)",
-              minWidth: { xs: "100%", md: "300px" },
-              maxWidth: "400px",
-              transition: "background-color 0.3s",
-              "&:hover": {
-                backgroundColor: "var(--navbar-background-hover)",
-              },
-            }}
-          >
-            <Typography variant="h6" sx={{ fontWeight: "bold" }} gutterBottom>
-              <i className="fa fa-pencil" aria-hidden="true"></i>
-              {t("service2Title")}
-            </Typography>
-            <Typography>{t("service2Description")}</Typography>
-          </Box>
-
-          <Box
-            sx={{
-              flex: 1,
-              p: 4,
-              border: "1px solid var(--navbar-background)",
-              borderRadius: 2,
-              boxShadow: 2,
-              textAlign: "center",
-              backgroundColor: "var(--background-color)",
-              minWidth: { xs: "100%", md: "300px" },
-              maxWidth: "400px",
-              transition: "background-color 0.3s",
-              "&:hover": {
-                backgroundColor: "var(--navbar-background-hover)",
-              },
-            }}
-          >
-            <Typography variant="h6" sx={{ fontWeight: "bold" }} gutterBottom>
-              <i className="fa fa-cogs" aria-hidden="true"></i>
-              {t("service3Title")}
-            </Typography>
-            <Typography>{t("service3Description")}</Typography>
-          </Box>
+      sx={{
+        display: "flex",
+        flexDirection: { xs: "column", md: "row" },
+        gap: 6,
+        mt: 8,
+        maxWidth: "800px",
+        mx: "auto",
+        justifyContent: "center",
+      }}
+    >
+      {/* Servicio 1 */}
+      <Box
+        sx={{
+          flex: 1,
+          p: 4,
+          border: "1px solid var(--color-main)",
+          borderRadius: 2,
+          boxShadow: 2,
+          backgroundColor: "var(--background-color)",
+          minWidth: { xs: "100%", md: "300px" },
+          maxWidth: "400px",
+          transition: "background-color 0.3s",
+          "&:hover": {
+            backgroundColor: "var(--navbar-background-hover)",
+          },
+        }}
+      >
+        <Box>
+          <FaLaptopCode size={35} />
         </Box>
+        <Typography
+          variant="h6"
+          sx={{ fontWeight: "bold", textAlign: "start" }}
+          gutterBottom
+        >
+          {t("service1Title")}
+        </Typography>
+        <Divider sx={{ mb: 2, borderColor: "var(--color-main)" }} /> {/* Línea debajo del título */}
+        <Typography sx={{ textAlign: "start" }}>
+          {t("service1Description")}
+        </Typography>
+      </Box>
+
+      {/* Servicio 2 */}
+      <Box
+        sx={{
+          flex: 1,
+          p: 4,
+          border: "1px solid var(--color-main)",
+          borderRadius: 2,
+          boxShadow: 2,
+          backgroundColor: "var(--background-color)",
+          minWidth: { xs: "100%", md: "300px" },
+          maxWidth: "400px",
+          transition: "background-color 0.3s",
+          "&:hover": {
+            backgroundColor: "var(--navbar-background-hover)",
+          },
+        }}
+      >
+        <Box>
+          <MdImagesearchRoller size={35} />
+        </Box>
+        <Typography
+          variant="h6"
+          sx={{ fontWeight: "bold", textAlign: "start" }}
+          gutterBottom
+        >
+          {t("service2Title")}
+        </Typography>
+        <Divider sx={{ mb: 2, borderColor: "var(--color-main)" }} /> {/* Línea debajo del título */}
+        <Typography sx={{ textAlign: "start" }}>
+          {t("service2Description")}
+        </Typography>
+      </Box>
+
+      {/* Servicio 3 */}
+      <Box
+        sx={{
+          flex: 1,
+          p: 4,
+          border: "1px solid var(--color-main)",
+          borderRadius: 2,
+          boxShadow: 2,
+          backgroundColor: "var(--background-color)",
+          minWidth: { xs: "100%", md: "300px" },
+          maxWidth: "400px",
+          transition: "background-color 0.3s",
+          "&:hover": {
+            backgroundColor: "var(--navbar-background-hover)",
+          },
+        }}
+      >
+        <Box>
+          <FaTools size={32} />
+        </Box>
+        <Typography
+          variant="h6"
+          sx={{ fontWeight: "bold", textAlign: "start" }}
+          gutterBottom
+        >
+          {t("service3Title")}
+        </Typography>
+        <Divider sx={{ mb: 2, borderColor: "var(--color-main)" }} /> {/* Línea debajo del título */}
+        <Typography sx={{ textAlign: "start" }}>
+          {t("service3Description")}
+        </Typography>
+      </Box>
+    </Box>
 
         <Box sx={{ textAlign: "center", mt: 7, mb: 4 }}>
           <Typography variant="h4">{t("title3")}</Typography>
@@ -171,7 +200,7 @@ export default function Home() {
             startIcon={<AutoAwesomeIcon />}
             endIcon={<AutoAwesomeIcon />}
           >
-            Trabajemos Juntos
+            {t("btnText1")}
           </Button>
         </Box>
       </Box>

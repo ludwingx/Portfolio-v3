@@ -1,11 +1,13 @@
 import React from 'react'
 import { Box, Typography, Container, IconButton, Link, useTheme } from "@mui/material";
+import { useTranslations } from 'next-intl';
 const Footer = () => {
+  const t = useTranslations("Footer");
   return (
     <Container maxWidth="lg" sx={{ mt: 4 }}>
   <Box sx={{ textAlign: "center" }}>
     <Typography>
-      Desarrollado por{" "}
+      {t("text")}{" "}
       <Link
         href="https://ludwing.dev"
         target="_blank"
@@ -21,7 +23,7 @@ const Footer = () => {
       >
         Ludwing
       </Link>{" "}
-      con mucho ❤️ y sin ☕
+      {t("text2")}
     </Typography>
     <Typography>© 2024</Typography>
   </Box>

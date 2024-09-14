@@ -27,10 +27,6 @@ interface ProjectCardProps {
   url: string;
 }
 
-
-const t = useTranslations('Home');
-
-
 const ProjectCard: React.FC<ProjectCardProps> = ({
   imageUrl,
   imageLogoUrl,
@@ -68,7 +64,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
               size="small"
               key={index}
               label={item}
-              color="primary" // Puedes cambiar esto según el tipo de proyecto
+              sx={{ backgroundColor: "var(--color-main)" }} // Puedes cambiar esto según el tipo de proyecto
             />
           ))}
                         {inDevelopment && (
@@ -99,7 +95,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         className="card-content"
         sx={{ transition: "opacity 0.3s ease" }}
       >
-        <Typography sx={{ fontWeight: "bold" }}>{title}</Typography>
+        <Typography sx={{ fontWeight: "bold", color: 'var(--color-main-light)' }}>{title}</Typography>
 
       </CardContent>
       <CardActions>
@@ -128,7 +124,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           textAlign: "center",
         }}
       >
-        <Typography variant="h5" fontWeight="bold" sx={{ marginBottom: 2}}>
+        <Typography variant="h5" fontWeight="bold" sx={{ marginBottom: 2, color: 'var(--color-main-light)'}}>
           {name}
         </Typography>
         <Typography variant="body1" sx={{ marginBottom: 2, fontSize: 14 }}>
@@ -147,7 +143,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             },
           }}
         >
-          {t("linkApp")}
+          {useTranslations('Home')('linkApp')}
         </Link>
       </CardContent>
     </Card>
