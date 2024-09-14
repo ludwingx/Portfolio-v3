@@ -2,10 +2,27 @@ import { Box, Typography, Grid, Container } from "@mui/material";
 import { useMessages, useTranslations } from "next-intl";
 import ProjectCard from './ProjectCard'; // Importa el componente de card
 
+interface Project {
+  imageUrl: string;
+  imageLogoUrl: string;
+  title: string;
+  description: string;
+  technologies: string[];
+  name: string;
+  type: string[];
+  inDevelopment: boolean;
+  favorite: boolean;
+  url: string;
+}
+
+interface Messages {
+  Projects: { [key: string]: Project[] };
+}
+
 export default function Projects() {
   const pt = useTranslations('ProjectPage');
   const t = useTranslations('Projects');
-  const messages = useMessages();
+  const messages = useMessages() as unknown as Messages;
   const projects = Object.keys(messages.Projects);
 
   return (
