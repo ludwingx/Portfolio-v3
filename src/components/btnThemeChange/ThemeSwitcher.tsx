@@ -6,7 +6,7 @@ import DarkModeIcon from '@mui/icons-material/DarkMode';
 import SettingsBrightnessIcon from '@mui/icons-material/SettingsBrightness'; // Icono para el modo del sistema
 import { ThemeContext } from '@/themeContext';
 import { IThemeContext, IThemeMode } from '@/themeContext/types';
-import styles from './themeSwitcher.module.css';
+import styles from '@/components/btnThemeChange/ThemeSwitcher.module.css';
 
 const ThemeSwitcher: React.FunctionComponent = () => {
   const { themeMode, switchThemeMode } = useContext(ThemeContext) as IThemeContext;

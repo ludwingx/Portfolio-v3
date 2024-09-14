@@ -4,7 +4,7 @@ import { useRouter, usePathname } from '../../navigation'; // Ajusta según tu e
 import { IconButton, Typography, Box } from '@mui/material';
 import TranslateIcon from '@mui/icons-material/Translate';
 import { useLocale, useTranslations } from 'next-intl'; // Asegúrate de que 'next-intl' esté correctamente configurado para manejar locales
-import styles from './LanguageSwitcher.module.css';
+import styles from '@/components/btnLanguageChange/LanguageSwitcher.module.css';
 // Define un tipo para las claves de locales
 type Locale = 'en' | 'es';
 
