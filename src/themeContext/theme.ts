@@ -23,6 +23,14 @@ export const AppLightTheme: Theme = createTheme({
     fontWeightMedium: 500,
   },
   components: {
+    MuiCssBaseline: {
+      styleOverrides: {
+        ':root': {
+          '--background-color': '#ffffff',
+          '--color-main': '#002a7f',
+        },
+      },
+    },
     MuiButton: {
       styleOverrides: {
         root: {
@@ -55,6 +63,7 @@ export const AppLightTheme: Theme = createTheme({
       styleOverrides: {
         root: {
           position: 'relative',
+          backgroundColor: '--background-color',
           overflow: 'hidden',
           borderRadius: '10px',
           boxShadow: '0 0 15px rgba(0, 28, 85, 0.5)', // Sombra azul al hacer hover
@@ -105,6 +114,14 @@ export const AppDarkTheme: Theme = createTheme({
     fontWeightMedium: 500,
   },
   components: {
+    MuiCssBaseline: {
+      styleOverrides: {
+        ':root': {
+          '--background-color': '#060606',
+          '--color-main': '#002a7f',
+        },
+      },
+    },
     MuiButton:{
       styleOverrides: {
         root: {
@@ -138,11 +155,11 @@ export const AppDarkTheme: Theme = createTheme({
     MuiCard: {
       styleOverrides: {
         root: {
+          backgroundColor: '--background-color',
           position: 'relative',
           overflow: 'hidden',
           borderRadius: '10px',
           transition: 'box-shadow 0.3s ease',
-          backgroundColor:  '#000000',
           textAlign: "start",
           boxShadow:  '0 0 15px rgba(0, 28, 85, 0.5)', // Sombra azul al hacer hover
           '&:hover': {
