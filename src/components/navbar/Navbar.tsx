@@ -18,52 +18,65 @@ const NavbarServer: React.FC = () => {
   ];
 
   return (
-    <Container>
-      <Box>
-        <AppBar position="static" className={styles.navbar} >
-          <Toolbar>
-            <Typography
-              variant="h6"
-              sx={{ flexGrow: 1 }}
-              className={styles.navbarLink}
-            >
-              <Link href={`/${locale}`} passHref>
+    <AppBar position="static" className={styles.navbar} elevation={0}>
+      <Container maxWidth="lg">
+        <Toolbar disableGutters>
+          {/* Logo */}
+          <Typography
+            variant="h6"
+            sx={{ flexGrow: 1 }}
+            className={styles.logo}
+          >
+            <Link href={`/${locale}`} passHref>
+              <Typography
+                component="span"
+                className={styles.navbarLink}
+                sx={{
+                  textDecoration: "none",
+                  color: "inherit",
+                  cursor: "pointer",
+                }}
+              >
+                LUDWING
+              </Typography>
+            </Link>
+          </Typography>
+
+          {/* Links de navegación */}
+          <Box
+            sx={{
+              display: { xs: "none", md: "flex" },
+              alignItems: "center",
+              gap: 4, // Mayor separación entre los enlaces
+            }}
+          >
+            {navLinks.map(({ href, label }) => (
+              <Link key={href} href={href} passHref>
                 <Typography
                   component="span"
                   className={styles.navbarLink}
-                  sx={{ textDecoration: "none", color: "inherit" }}
+                  sx={{
+                    textDecoration: "none",
+                    color: "inherit",
+                    fontWeight: "bold",
+                    cursor: "pointer",
+                  }}
                 >
-                  LUDWING
+                  {label}
                 </Typography>
               </Link>
-            </Typography>
-            <Box
-              sx={{
-                display: { xs: "none", md: "flex", alignItems: "center" },
-                gap: 2,
-              }}
-            >
-              {navLinks.map(({ href, label }) => (
-                <Link key={href} href={href} passHref>
-                  <Typography
-                    component="span"
-                    className={styles.navbarLink}
-                    sx={{}}
-                  >
-                    {label}
-                  </Typography>
-                </Link>
-              ))}
-              {/* Aquí puedes incluir LanguageSwitcher y ThemeSwitcher si son compatibles con renderizado del servidor */}
-              <LanguageSwitcher />
-              <ThemeSwitcher />
-            </Box>
-            <MobileMenu navLinks={navLinks} />{" "}
-            {/* Pasar las traducciones como propiedad */}
-          </Toolbar>
-        </AppBar>
-      </Box>
-    </Container>
+            ))}
+
+            {/* LanguageSwitcher y ThemeSwitcher */}
+            <LanguageSwitcher  />
+            <ThemeSwitcher  />
+          </Box>
+
+          {/* Menú móvil */}
+          <MobileMenu navLinks={navLinks} />
+        </Toolbar>
+      </Container>
+    </AppBar>
   );
 };
 

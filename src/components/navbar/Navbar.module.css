@@ -1,11 +1,19 @@
-.navbarLink {
+.navbar {
+  background-color: #ffffff; /* Fondo blanco limpio */
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* Línea inferior suave */
+}
 
+.navbarLink {
   text-decoration: none;
-  color: inherit;
-  transition: color 0.3s;
-  font-weight: bold;
+  font-weight: 500; /* Peso de fuente ligeramente menor para un look más limpio */
+  transition: color 0.3s, background-color 0.1s, border-bottom 0.1s;
+  padding: 5px;
+  position: relative;
 }
 
 .navbarLink:hover {
-  color: #001c55 /* Esta es la variable correcta */
+  color: #001c55; /* Cambia el color del texto al hacer hover */
+  border-bottom: solid #001c55; /* Añade una línea inferior sutil al hacer hover */
+  background-color: transparent; /* Mantén el fondo transparente */
 }

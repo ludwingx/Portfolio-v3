@@ -1,7 +1,3 @@
-.btnTheme {
-  /* Agrega estilos aquí para el botón */
-  color: var(--color-main); /* Ejemplo de uso de una variable CSS */
-}
 .btnTheme:hover {
   background-color: #00000000;
   color: #001c55 /* Esta es la variable correcta */

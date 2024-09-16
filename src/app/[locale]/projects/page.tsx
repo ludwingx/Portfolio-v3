@@ -1,6 +1,6 @@
 import { Box, Typography, Grid, Container } from "@mui/material";
 import { useMessages, useTranslations } from "next-intl";
-import ProjectCard from './ProjectCard'; // Importa el componente de card
+import ProjectCard from './ProjectCard';
 
 interface Project {
   imageUrl: string;
@@ -48,7 +48,7 @@ export default function Projects() {
                 imageLogoUrl={messages.Projects[project][0].imageLogoUrl}
                 title={messages.Projects[project][0].title}
                 description={messages.Projects[project][0].description}
-                technologies={messages.Projects[project][0].technologies} // Asume que tienes una lista de tecnologías
+                technologies={messages.Projects[project][0].technologies}
                 name={messages.Projects[project][0].name}
                 type={messages.Projects[project][0].type}
                 inDevelopment={messages.Projects[project][0].inDevelopment}

@@ -1,6 +1,3 @@
-.btnTheme{
-  color: var(--navbarText)
-}
 .btnTheme:hover {
   background-color: #00000000 /* Esta es la variable correcta */;
   color: #001c55 /* Esta es la variable correcta */
