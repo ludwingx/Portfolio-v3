@@ -57,7 +57,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ navLinks }) => {
         onClick={handleDrawerToggle}
         sx={{ display: { xs: 'block', md: 'none' } }}
       >
-        <MenuIcon />
+        <MenuIcon sx={{ }} />
       </IconButton>
       <Drawer
         variant="temporary"
