@@ -95,7 +95,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         className="card-content"
         sx={{ transition: "opacity 0.3s ease" }}
       >
-        <Typography sx={{ fontWeight: "bold", color: 'var(--color-main-light)' }}>{title}</Typography>
+        <Typography sx={{ fontWeight: "bold" }}>{title}</Typography>
 
       </CardContent>
       <CardActions>
