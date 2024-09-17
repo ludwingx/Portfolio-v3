@@ -1,7 +1,7 @@
 "use client"; // Directiva para componentes del lado del cliente
 
 import React from "react";
-import { Drawer, IconButton, Box, List, ListItem, Grid, ListItemText, Divider } from "@mui/material";
+import { Drawer, IconButton, Box, List, ListItem, Grid, ListItemText, Divider, Typography } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import styles from "./Navbar.module.css";
 import LanguageSwitcher from "../btnLanguageChange/LanguageSwitcher";
@@ -20,10 +20,10 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ navLinks }) => {
 
   const drawer = (
     <Box
-      sx={{ width: 250 }}
       role="presentation"
       onClick={handleDrawerToggle}
       onKeyDown={handleDrawerToggle}
+      sx={{ overflowX: 'hidden' }} // Agrega esta línea
     >
       <Divider />
       <List>
@@ -35,16 +35,15 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ navLinks }) => {
         <Grid
           container
           direction="row"
-          sx={{ ml: 1, mt: 3,
-            alignItems: "center",
-          }}
->
-          <LanguageSwitcher />
-          <ThemeSwitcher />
+          sx={{ ml: 1, mt: 3, alignItems: "center" }}
+        >
+          <Box sx={{ display: "flex", alignItems: "center" }}>
+            <LanguageSwitcher />
+            <Typography sx={{ fontSize: 20 }}>|</Typography>
+            <ThemeSwitcher />
+          </Box>
         </Grid>
       </List>
-
-
     </Box>
   );
 

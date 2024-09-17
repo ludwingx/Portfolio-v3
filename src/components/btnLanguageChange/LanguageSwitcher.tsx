@@ -13,7 +13,6 @@ const LanguageSwitcher = () => {
   const router = useRouter();
   const pathname = usePathname();
 
-  // Define el objeto locales con las claves específicas
   const locales: { [key in Locale]: string } = {
     en: 'EN',
     es: 'ES'
@@ -30,7 +29,7 @@ const LanguageSwitcher = () => {
         onClick={() => handleLocaleChange(locale === 'en' ? 'es' : 'en')} // Cambia entre inglés y español
       >
         <TranslateIcon />
-        <Typography variant="body2" style={{ marginLeft: 8 }}>
+        <Typography variant="body2" style={{ marginLeft: 1, fontWeight: 'bold', fontSize: '0.7rem', marginBottom: 6 }}>
           {locales[locale]}
         </Typography>
       </IconButton>

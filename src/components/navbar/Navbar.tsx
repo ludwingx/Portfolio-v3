@@ -11,6 +11,7 @@ const NavbarServer: React.FC = () => {
   const locale = useLocale(); // Obtén el idioma actual
 
   const navLinks = [
+    { href: `/${locale}`, label: t("home") },
     { href: `/${locale}/aboutme`, label: t("about") },
     { href: `/${locale}/projects`, label: t("portfolio") },
     { href: `/${locale}/services`, label: t("services") },
@@ -22,11 +23,7 @@ const NavbarServer: React.FC = () => {
       <Container maxWidth="lg">
         <Toolbar disableGutters>
           {/* Logo */}
-          <Typography
-            variant="h6"
-            sx={{ flexGrow: 1 }}
-            className={styles.logo}
-          >
+          <Typography variant="h6" sx={{ flexGrow: 1 }} className={styles.logo}>
             <Link href={`/${locale}`} passHref>
               <Typography
                 component="span"
@@ -66,13 +63,13 @@ const NavbarServer: React.FC = () => {
                 </Typography>
               </Link>
             ))}
+            <Box sx={{ display: "flex", alignItems: "center", gap: 2 }}>
+              <LanguageSwitcher />
 
-            {/* LanguageSwitcher y ThemeSwitcher */}
-            <LanguageSwitcher  />
-            <ThemeSwitcher  />
+              <ThemeSwitcher />
+            </Box>
           </Box>
 
-          {/* Menú móvil */}
           <MobileMenu navLinks={navLinks} />
         </Toolbar>
       </Container>

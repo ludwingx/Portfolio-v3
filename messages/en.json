@@ -17,6 +17,7 @@
     "btnText1": "Let's work together"
   },
   "Navbar": {
+    "home": "HOME",
     "about": "ABOUT ME",
     "portfolio": "PORTFOLIO",
     "services": "SERVICES",

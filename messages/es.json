@@ -18,6 +18,7 @@
     "btnText1": "Trabajemos juntos"
   },
   "Navbar": {
+    "home": "INICIO",
     "about": "SOBRE MÍ",
     "portfolio": "PORTAFOLIO",
     "services": "SERVICIOS",
