@@ -23,13 +23,13 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ navLinks }) => {
       role="presentation"
       onClick={handleDrawerToggle}
       onKeyDown={handleDrawerToggle}
-      sx={{ overflowX: 'hidden' }} // Agrega esta línea
+      sx={{ overflowX: 'hidden', backgroundColor: 'var(--background-color)', height: '100%' }} // Agrega esta línea
     >
       <Divider />
       <List>
         {navLinks.map(({ href, label }) => (
-          <ListItem button key={href} component="a" href={href} onClick={handleDrawerToggle}>
-            <ListItemText primary={label} />
+          <ListItem button key={href} sx={{ '&:hover': { backgroundColor: 'var(--background-color)' }}}  component="a" href={href} onClick={handleDrawerToggle}>
+            <ListItemText className={styles.navbarLink} primary={label} />
           </ListItem>
         ))}
         <Grid

@@ -2,14 +2,14 @@ import createMiddleware from 'next-intl/middleware';
 import {locales} from './config';
 
 export default createMiddleware({
-  // Lista de todos los locales soportados
   locales,
-
-  // Local por defecto cuando no se encuentra coincidencia
-  defaultLocale: 'es'
+  defaultLocale: 'es',
 });
 
 export const config = {
-  // Coincidir solo con los nombres de ruta internacionalizados
-  matcher: ['/', '/(es|en)/:path*']
+  // Coincidir solo con las rutas internacionalizadas, excluyendo favicon y archivos estáticos
+  matcher: [
+    '/((?!api|_next/static|_next/image|favicon.ico|.*\\..*).*)',
+    '/(es|en)(/.*)?'
+  ],
 };
