@@ -38,6 +38,20 @@
       "toolsText": "Para mis proyectos aveces utilizo una variedad como Git, Postman, Visual Studio Code, Adobe PhotoShop, Draw.io, Vercel, Supabase"
     }
   },
+  "Contact":{
+    "subtitle": "Lo que sea que necesites",
+    "title": "Contacto",
+    "text": "Ya sea que tenga una pregunta simple o sepa exactamente lo que quiere",
+    "labelFormName": "Nombre",
+    "placeholderFormName": "Tu nombre",
+    "labelFormEmail": "Correo Electronico",
+    "placeholderFormEmail": "Por ejemplo, johndoe@gmail.com",
+    "labelFormPhone": "Telefono",
+    "placeholderFormPhone": "El numero al que puedo llamar",
+    "labelFormMessage": "Mensaje",
+    "placeholderFormMessage": "¿Cómo te puedo ayudar?",
+    "btnText": "Enviar"
+  },
   "Navbar": {
     "home": "INICIO",
     "about": "SOBRE MÍ",

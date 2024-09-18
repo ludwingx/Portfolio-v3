@@ -28,13 +28,13 @@ export default function Projects() {
   return (
     <Container>
       <Box>
-        <Box sx={{ my: 4 }}>
-          <Typography variant="h2">
+        <Box sx={{ mt: 4 }}>
+          <Typography variant="h4">
             {pt('title')}
           </Typography>
         </Box>
-        <Box sx={{ my: 4 }}>
-          <Typography variant="h5">
+        <Box sx={{ mt: 2 }}>
+          <Typography variant="subtitle1">
             {pt('description')}
           </Typography>
         </Box>
