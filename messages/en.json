@@ -10,11 +10,33 @@
     "service2Title": "Research/UX Design",
     "service2Description": "I work to improve user experience with intuitive and effective designs. I research and design interfaces to ensure users enjoy a smooth and satisfying experience, increasing satisfaction and retention.",
     "service3Title": "Technical Consulting",
-    "service3Description": "I provide support at every stage of the project, from requirements analysis and design to development, testing, and implementation. I ensure to deliver comprehensive solutions tailored to your specific needs.",    "title3": "Selected Works",
+    "service3Description": "I provide support at every stage of the project, from requirements analysis and design to development, testing, and implementation. I ensure to deliver comprehensive solutions tailored to your specific needs.",
+    "title3": "Selected Works",
     "subtitle3": "Explore my projects, each completed with passion and delivered on time, exceeding expectations",
     "linkApp": "View App",
     "linkGithub": "Code on Github",
     "btnText1": "Let's work together"
+  },
+  "Aboutme": {
+    "title": "Hello, I'm Ludwing 👋",
+    "subtitle": "Passionate about web development and constantly evolving technology. With a solid background as a Higher Technician in Computer Systems and currently studying Systems Engineering, I have developed skills in design, development, and analysis of computer systems. I specialize in creating digital experiences that combine code with creativity, offering innovative solutions that resonate with users and inspire.",
+    "buttonCv": "Download CV",
+    "title2": "The Story of My Technologies",
+    "subtitle2": "Throughout my career, I have worked with a wide range of technologies that have allowed me to create complete and efficient solutions at every stage of development:",
+    "technologies": {
+      "programmingLanguagesTitle": "💻 Programming Languages: ",
+      "programmingLanguagesText": "I am familiar with several languages, such as C#, Python, JavaScript, TypeScript.",
+      "frontendTitle": "🎨 Frontend: ",
+      "frontendText": "My experience includes Angular, React, Next.js, Astro, Bootstrap, Material UI, Shadcn, with which I build modern and efficient user interfaces.",
+      "backendTitle": "🔧 Backend: ",
+      "backendText": "I have a solid foundation in backend development, with proficiency in Node.js, Express.js, Laravel, and practical experience with PHP.",
+      "databasesTitle": "💾 Databases: ",
+      "databasesText": "I work with databases like PostgreSQL, MySQL, which allows me to create robust and efficient data-driven applications.",
+      "mobileDevelopmentTitle": "📱 Mobile Development: ",
+      "mobileDevelopmentText": "My skills extend to mobile development, particularly with React Native currently and practical experience with Ionic.",
+      "toolsTitle": "🛠️ Tools: ",
+      "toolsText": "For my projects, I sometimes use a variety of tools such as Git, Postman, Visual Studio Code, Adobe Photoshop, Draw.io, Vercel, Supabase."
+    }
   },
   "Navbar": {
     "home": "HOME",
@@ -23,7 +45,7 @@
     "services": "SERVICES",
     "contact": "CONTACT ME"
   },
-  "Footer":{
+  "Footer": {
     "text": "Developed by",
     "text2": "with a lot of ❤️ and without ☕"
   },
@@ -37,7 +59,14 @@
         "title": "Native and Web Application for Farmacia Santa Rosita",
         "name": "Santa Rosita Manager",
         "description": "Application in development to optimize and manage internal pharmacy processes, improving efficiency in inventory management, orders, and customer service.",
-        "technologies": ["Expo", "TypeScript", "CSS", "Astro (planned)", "NestJS (planned)", "PostgreSQL (planned)"],
+        "technologies": [
+          "Expo",
+          "TypeScript",
+          "CSS",
+          "Astro (planned)",
+          "NestJS (planned)",
+          "PostgreSQL (planned)"
+        ],
         "type": ["Mobile Application", "Web Application"],
         "imageUrl": "/img/farmaciaSantaRosita.png",
         "imageLogoUrl": "/img/srappIcon.svg",
@@ -51,7 +80,17 @@
         "title": "Web Application for the AstroboyXL Listening Party Event",
         "name": "Astroboyxl.shop",
         "description": "Web application for the AstroboyXL LISTENING PARTY event, for ticket purchase, user management, and buying exclusive products from the Trucho store.",
-        "technologies": ["HTML", "CSS", "JavaScript", "React", "NextJS", "Typescript", "Prisma", "Vercel", "PostgreSQL"],
+        "technologies": [
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "React",
+          "NextJS",
+          "Typescript",
+          "Prisma",
+          "Vercel",
+          "PostgreSQL"
+        ],
         "type": ["Web Application"],
         "imageUrl": "/img/mockup/astroboy.svg",
         "imageLogoUrl": "/img/astroicon.svg",
@@ -65,7 +104,15 @@
         "title": "Mobile Web Application for CEA",
         "name": "App CEA",
         "description": "Mobile web app for the control and monitoring of wild animals rescued by the CEA of the Autonomous Departmental Government of Santa Cruz.",
-        "technologies": ["HTML", "TypeScript", "SCSS", "Ionic", "PHP", "MySQL", "Bootstrap"],
+        "technologies": [
+          "HTML",
+          "TypeScript",
+          "SCSS",
+          "Ionic",
+          "PHP",
+          "MySQL",
+          "Bootstrap"
+        ],
         "type": ["Mobile Application"],
         "imageUrl": "/img/mockup/appcea.svg",
         "imageLogoUrl": "/img/appceaIcon.svg",
