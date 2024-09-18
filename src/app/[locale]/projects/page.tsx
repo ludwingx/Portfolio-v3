@@ -29,7 +29,7 @@ export default function Projects() {
     <Container>
       <Box>
         <Box sx={{ mt: 4 }}>
-          <Typography variant="h4">
+          <Typography variant="h3">
             {pt('title')}
           </Typography>
         </Box>
