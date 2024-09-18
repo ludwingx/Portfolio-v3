@@ -38,6 +38,21 @@
       "toolsText": "For my projects, I sometimes use a variety of tools such as Git, Postman, Visual Studio Code, Adobe Photoshop, Draw.io, Vercel, Supabase."
     }
   },
+  "Contact": {
+    "subtitle": "Whatever you need",
+    "title": "Contact",
+    "text": "Whether you have a simple question or know exactly what you want",
+    "labelFormName": "Name",
+    "placeholderFormName": "Your name",
+    "labelFormEmail": "Email",
+    "placeholderFormEmail": "For example, johndoe@gmail.com",
+    "labelFormPhone": "Phone",
+    "placeholderFormPhone": "The number I can call",
+    "labelFormMessage": "Message",
+    "placeholderFormMessage": "How can I help you?",
+    "btnText": "Send"
+  },
+
   "Navbar": {
     "home": "HOME",
     "about": "ABOUT ME",
