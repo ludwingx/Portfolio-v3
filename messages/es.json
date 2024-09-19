@@ -19,7 +19,7 @@
   },
   "Aboutme": {
     "title": "Hola, soy Ludwing 👋",
-    "subtitle": "Apasionado por el desarrollo web y la tecnología en constante evolución. Con una sólida formación como Técnico Superior en Sistemas Informáticos y actualmente cursando Ingeniería de Sistemas, he desarrollado habilidades en diseño, desarrollo y análisis de sistemas informáticos. Me especializo en crear experiencias digitales que combinan código con creatividad, ofreciendo soluciones innovadoras que resuenan con los usuarios e inspiran.",
+    "subtitle": "Apasionado por el desarrollo web y la tecnología. Con formación en Sistemas Informáticos y en curso de Ingeniería de Sistemas, he desarrollado habilidades en análisis, diseño y desarrollo de sistemas. Me especializo en crear experiencias digitales que fusionan código y creatividad, adaptándome tanto al trabajo en equipo como individual.",
     "buttonCv": "Descargar CV",
     "title2": "La historia de mis tecnologías",
     "subtitle2": "A lo largo de mi carrera, he trabajado con una amplia gama de tecnologías que me han permitido crear soluciones completas y eficientes en cada etapa de desarrollo:",
@@ -29,13 +29,13 @@
       "frontendTitle": "🎨 Frontend: ",
       "frontendText": "Mi experiencia abarca Angular, React, Next.js, Astro, Bootstrap, Material Ui, Shadcn, con los cuales construyo interfaces de usuario modernas y eficientes.",
       "backendTitle": "🔧 Backend: ",
-      "backendText": "Tengo una base sólida en desarrollo de backend, con competencia en Node.js, Express.js, Laravel y experiencia práctica PHP",
+      "backendText": "Tengo una base sólida en desarrollo de backend, con competencia en Node.js, Express.js, Laravel y experiencia práctica PHP.",
       "databasesTitle": "💾 Bases de datos: ",
       "databasesText": "Trabajo con bases como PostgreSQL, MySQL, lo que me permite crear aplicaciones basadas en datos sólidas y eficientes.",
       "mobileDevelopmentTitle": "📱 Desarrollo móvil: ",
-      "mobileDevelopmentText": "Mis habilidades se extienden al desarrollo móvil, particularmente en ReactNative actualmente y experiencia practica con Ionic",
+      "mobileDevelopmentText": "Mis habilidades se extienden al desarrollo móvil, particularmente en ReactNative actualmente y experiencia practica con Ionic.",
       "toolsTitle": "🛠️ Herramientas: ",
-      "toolsText": "Para mis proyectos aveces utilizo una variedad como Git, Postman, Visual Studio Code, Adobe PhotoShop, Draw.io, Vercel, Supabase"
+      "toolsText": "Para mis proyectos aveces utilizo una variedad como Git, Postman, Visual Studio Code, Adobe PhotoShop, Draw.io, Vercel, Supabase."
     }
   },
   "Contact":{

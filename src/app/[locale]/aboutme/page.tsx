@@ -10,7 +10,7 @@ export default function AboutMe() {
       {/* Foto de perfil centrada dentro de un Box usando Material UI */}
       <Box sx={{ display: 'flex', justifyContent: 'center', mt: 5 }}>
         <Avatar
-          sx={{ width: 200, height: 200,  }}
+          sx={{ width: 200, height: 200, border: '3px solid', boxShadow: 10 }}
           alt="Foto de perfil de Ludwing Armijo"
           src="/img/photoPerfil.svg"
         />
