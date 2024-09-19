@@ -1,41 +1,41 @@
 {
   "Home": {
-    "title": "Hi, I'm Ludwing 👋, Full-Stack Web Developer",
-    "subtitle": "I specialize in creating innovative web solutions using a variety of technologies. My experience in the field has helped me hone my skills and tackle various challenges in web development.",
+    "title": "Hi, I'm Ludwing 👋, a Full-Stack Web Developer",
+    "subtitle": "I specialize in creating innovative web solutions using a variety of technologies. My experience in the field has helped me refine my skills and tackle diverse challenges in web development.",
     "title2": "Innovate. Develop.",
     "title2r": "Evolve.",
-    "subtitle2": "I have worked on system development from start to finish. From planning and designing databases to creating intuitive user interfaces and continuous implementation, I ensure that every stage of the project is successful.",
+    "subtitle2": "I have worked on developing systems from start to finish. From database planning and design to creating intuitive user interfaces and continuous implementation, I ensure every project stage is successful.",
     "service1Title": "Web/Mobile Development",
-    "service1Description": "I create high-quality websites and mobile applications tailored to your business needs. Whether you need to enhance your online presence or develop a new app, I handle both front-end and back-end development.",
-    "service2Title": "Research/UX Design",
-    "service2Description": "I work to improve user experience with intuitive and effective designs. I research and design interfaces to ensure users enjoy a smooth and satisfying experience, increasing satisfaction and retention.",
+    "service1Description": "I create high-quality websites and mobile applications tailored to your business needs. Whether you need to improve your online presence or develop a new app, I handle both the front-end and back-end.",
+    "service2Title": "UX Research/Design",
+    "service2Description": "I work to enhance user experience with intuitive and effective designs. I conduct research and design interfaces to ensure users have a smooth and satisfying experience, boosting satisfaction and retention.",
     "service3Title": "Technical Consulting",
-    "service3Description": "I provide support at every stage of the project, from requirements analysis and design to development, testing, and implementation. I ensure to deliver comprehensive solutions tailored to your specific needs.",
-    "title3": "Selected Works",
-    "subtitle3": "Explore my projects, each completed with passion and delivered on time, exceeding expectations",
+    "service3Description": "I provide support at every stage of the project, from requirements analysis and design to development, testing, and implementation. I ensure comprehensive solutions tailored to your specific needs.",
+    "title3": "Featured Works",
+    "subtitle3": "Explore my projects, each completed with passion and delivered on time, exceeding expectations.",
     "linkApp": "View App",
     "linkGithub": "Code on Github",
     "btnText1": "Let's work together"
   },
   "Aboutme": {
-    "title": "Hello, I'm Ludwing 👋",
-    "subtitle": "Passionate about web development and evolving technology. With a background in IT Systems and currently pursuing Systems Engineering, I’ve developed skills in analysis, design, and system development. I specialize in creating digital experiences that blend code with creativity, adapting to both team collaboration and individual work.",
+    "title": "Hi, I'm Ludwing 👋",
+    "subtitle": "I am a passionate web developer with experience in front-end, back-end, and databases. I have worked on both independent and collaborative projects, gaining skills across the entire software lifecycle. I focus on applying good architectural practices and design patterns to enhance scalability and performance, combining creativity and code to create functional and attractive products.",
     "buttonCv": "Download CV",
     "title2": "The Story of My Technologies",
-    "subtitle2": "Throughout my career, I have worked with a wide range of technologies that have allowed me to create complete and efficient solutions at every stage of development:",
+    "subtitle2": "Throughout my career, I have worked with a wide range of technologies that have enabled me to create complete and efficient solutions at every stage of development:",
     "technologies": {
-      "programmingLanguagesTitle": "💻 Programming Languages: ",
-      "programmingLanguagesText": "I am familiar with several languages, such as C#, Python, JavaScript, TypeScript.",
-      "frontendTitle": "🎨 Frontend: ",
-      "frontendText": "My experience includes Angular, React, Next.js, Astro, Bootstrap, Material UI, Shadcn, with which I build modern and efficient user interfaces.",
-      "backendTitle": "🔧 Backend: ",
-      "backendText": "I have a solid foundation in backend development, with proficiency in Node.js, Express.js, Laravel, and practical experience with PHP.",
-      "databasesTitle": "💾 Databases: ",
-      "databasesText": "I work with databases like PostgreSQL, MySQL, which allows me to create robust and efficient data-driven applications.",
-      "mobileDevelopmentTitle": "📱 Mobile Development: ",
-      "mobileDevelopmentText": "My skills extend to mobile development, particularly with React Native currently and practical experience with Ionic.",
-      "toolsTitle": "🛠️ Tools: ",
-      "toolsText": "For my projects, I sometimes use a variety of tools such as Git, Postman, Visual Studio Code, Adobe Photoshop, Draw.io, Vercel, Supabase."
+      "programmingLanguagesTitle": "💻 Programming Languages:",
+      "programmingLanguagesText": "I am familiar with several languages, such as C#, Python, JavaScript, and TypeScript.",
+      "frontendTitle": "🎨 Frontend:",
+      "frontendText": "My experience spans Angular, React, Next.js, Astro, Bootstrap, Material UI, and Shadcn, with which I build modern and efficient user interfaces.",
+      "backendTitle": "🔧 Backend:",
+      "backendText": "I have a solid foundation in backend development, with competence in Node.js, Express.js, Laravel, and hands-on experience with PHP.",
+      "databasesTitle": "💾 Databases:",
+      "databasesText": "I work with databases like PostgreSQL and MySQL, allowing me to create robust, data-driven applications.",
+      "mobileDevelopmentTitle": "📱 Mobile Development:",
+      "mobileDevelopmentText": "My skills extend to mobile development, particularly in React Native and practical experience with Ionic.",
+      "toolsTitle": "🛠️ Tools:",
+      "toolsText": "For my projects, I often use tools like Git, Postman, Visual Studio Code, Adobe Photoshop, Draw.io, Vercel, and Supabase."
     }
   },
   "Contact": {
@@ -52,7 +52,6 @@
     "placeholderFormMessage": "How can I help you?",
     "btnText": "Send"
   },
-
   "Navbar": {
     "home": "HOME",
     "about": "ABOUT ME",
@@ -61,18 +60,18 @@
   },
   "Footer": {
     "text": "Developed by",
-    "text2": "with a lot of ❤️ and without ☕"
+    "text2": "with lots of ❤️ and no ☕"
   },
   "ProjectPage": {
     "title": "Projects",
-    "description": "Explore some of the projects I have been involved in. Each project includes a detailed description and a sample image."
+    "description": "Discover some of the projects I have been involved in. Each project has a detailed description and a sample image."
   },
   "Projects": {
     "project1": [
       {
-        "title": "Native and Web Application for Farmacia Santa Rosita",
+        "title": "Native and Web Application for Santa Rosita Pharmacy",
         "name": "Santa Rosita Manager",
-        "description": "Application in development to optimize and manage internal pharmacy processes, improving efficiency in inventory management, orders, and customer service.",
+        "description": "Ongoing development of an application to optimize and manage internal pharmacy processes, improving inventory handling, orders, and customer service.",
         "technologies": [
           "Expo",
           "TypeScript",
@@ -91,9 +90,9 @@
     ],
     "project2": [
       {
-        "title": "Web Application for the AstroboyXL Listening Party Event",
+        "title": "Web Application for AstroboyXL Listening Party Event",
         "name": "Astroboyxl.shop",
-        "description": "Web application for the AstroboyXL LISTENING PARTY event, for ticket purchase, user management, and buying exclusive products from the Trucho store.",
+        "description": "Web application for the AstroboyXL LISTENING PARTY event, managing ticket sales, user registration, and exclusive product purchases from the Trucho store.",
         "technologies": [
           "HTML",
           "CSS",
@@ -115,9 +114,9 @@
     ],
     "project3": [
       {
-        "title": "Mobile Web Application for CEA",
+        "title": "Web Mobile Application for CEA",
         "name": "App CEA",
-        "description": "Mobile web app for the control and monitoring of wild animals rescued by the CEA of the Autonomous Departmental Government of Santa Cruz.",
+        "description": "Web mobile app for monitoring and tracking rescued wildlife by CEA of the Autonomous Government of Santa Cruz.",
         "technologies": [
           "HTML",
           "TypeScript",
@@ -137,9 +136,9 @@
     ],
     "project4": [
       {
-        "title": "Landing Page of My First Professional Portfolio",
+        "title": "Landing Page for My First Professional Portfolio",
         "name": "Portfolio",
-        "description": "Landing Page for my first personal portfolio, where I could showcase my projects and skills.",
+        "description": "Landing Page for my first personal portfolio, where I showcased my projects and skills.",
         "technologies": ["Angular", "TypeScript", "SCSS", "Bootstrap"],
         "type": ["Landing Page"],
         "imageUrl": "/img/mockup/portfoliov2.svg",
