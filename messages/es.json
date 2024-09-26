@@ -4,7 +4,7 @@
     "subtitle": "Me especializo en crear soluciones web innovadoras utilizando una variedad de tecnologías. Mi experiencia en el campo me ha ayudado a perfeccionar mis habilidades y a enfrentar diversos retos en el desarrollo web.",
     "title2": "Innovar. Desarrollar. ",
     "title2r": "Evolucionar.",
-    "subtitle2": "He trabajado en el desarrollo de sistemas de principio a fin. Desde la planificación y el diseño de bases de datos hasta la creación de interfaces de usuario intuitivas y la implementación continua, me aseguro de que cada etapa del proyecto sea exitosa.",
+    "subtitle2": "He trabajado en el desarrollo de sistemas de principio a fin. Desde la planificación y el diseño de bases de datos hasta la creación de interfaces de usuario intuitivas y la implementación continua.",
     "service1Title": "Desarrollo Web/Móvil",
     "service1Description": "Creo sitios web y aplicaciones móviles de alta calidad que se ajustan a las necesidades de tu negocio. Ya sea que necesites mejorar tu presencia en línea o desarrollar una nueva aplicación, me encargo tanto del front-end como del back-end.",
     "service2Title": "Investigación/Diseño UX",
@@ -20,7 +20,20 @@
   "Aboutme": {
     "title": "Hola, soy Ludwing 👋",
     "subtitle": "Soy un apasionado desarrollador web con experiencia en front-end, back-end y bases de datos. He trabajado en proyectos independientes y colaborativos, adquiriendo habilidades en todo el ciclo de vida del software. Me enfoco en aplicar buenas prácticas de arquitectura y patrones de diseño para mejorar la escalabilidad y rendimiento, fusionando creatividad y código para crear productos funcionales y atractivos.",
-    "buttonCv": "Descargar CV",
+    "buttonCv": "Ver CV",
+
+    "title3": "Formación Académica",
+
+    "nameAcademic": "Ingeniería de Sistemas",
+    "nameInstitution": "en Universidad Privada Cumbre",
+    "dates": "Abril 2021 - Presente",
+    "city": "Santa Cruz, Bolivia",
+
+    "nameAcademic2": "Técnico Superior en Sistemas Informáticos",
+    "nameInstitution2": "en Instituto Tecnológico \"Jesús María\" Fe Y Alegría",
+    "dates2": "Febrero 2020 - Noviembre 2022",
+    "city2": "Santa Cruz, Bolivia",
+
     "title2": "La historia de mis tecnologías",
     "subtitle2": "A lo largo de mi carrera, he trabajado con una amplia gama de tecnologías que me han permitido crear soluciones completas y eficientes en cada etapa de desarrollo:",
     "technologies": {
@@ -33,7 +46,7 @@
       "databasesTitle": "💾 Bases de datos: ",
       "databasesText": "Trabajo con bases como PostgreSQL, MySQL, lo que me permite crear aplicaciones basadas en datos sólidas y eficientes.",
       "mobileDevelopmentTitle": "📱 Desarrollo móvil: ",
-      "mobileDevelopmentText": "Mis habilidades se extienden al desarrollo móvil, particularmente en ReactNative actualmente y experiencia practica con Ionic.",
+      "mobileDevelopmentText": "Mis habilidades se extienden al desarrollo móvil, actualmente en ReactNative y experiencia practica con Ionic.",
       "toolsTitle": "🛠️ Herramientas: ",
       "toolsText": "Para mis proyectos aveces utilizo una variedad como Git, Postman, Visual Studio Code, Adobe PhotoShop, Draw.io, Vercel, Supabase."
     }
