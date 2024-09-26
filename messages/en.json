@@ -50,7 +50,10 @@
     "placeholderFormPhone": "The number I can call",
     "labelFormMessage": "Message",
     "placeholderFormMessage": "How can I help you?",
-    "btnText": "Send"
+    "btnText": "Send",
+    "sending": "Sending...",
+    "successMessage": "Message sent successfully!",
+    "errorMessage": "There was an error sending the form. Please try again."
   },
   "Navbar": {
     "home": "HOME",

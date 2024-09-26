@@ -63,7 +63,10 @@
     "placeholderFormPhone": "El numero al que puedo llamar",
     "labelFormMessage": "Mensaje",
     "placeholderFormMessage": "¿Cómo te puedo ayudar?",
-    "btnText": "Enviar"
+    "btnText": "Enviar",
+    "sending": "Enviando...",
+    "successMessage": "Tu mensaje ha sido enviado con éxito.",
+    "errorMessage": "Hubo un error al enviar el formulario, intentalo de nuevo."
   },
   "Navbar": {
     "home": "INICIO",
