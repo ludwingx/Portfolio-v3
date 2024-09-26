@@ -20,13 +20,16 @@ export default function Contact() {
     try {
       await sendEmail(formData);
       setIsSubmitted(true);
-      event.currentTarget.reset(); // Restablecer el formulario
+
+      // Verifica si currentTarget es válido antes de resetear
+      if (event.currentTarget) {
+        event.currentTarget.reset(); // Restablecer el formulario
+      }
 
       // Refrescar la página después de 2 segundos
       setTimeout(() => {
         window.location.reload();
       }, 2000);
-
     } catch (err) {
       console.error(err); // Mostrar el error en la consola para depuración
       setError("Hubo un error al enviar el formulario. Inténtalo de nuevo.");
