@@ -15,7 +15,7 @@ export const EmailTemplate: React.FC<EmailTemplateProps> = ({ name, email, phone
     <p>Has recibido un nuevo mensaje a través de tu formulario de contacto:</p>
 
     <div style={{ padding: '10px 0', borderTop: '1px solid #ddd', borderBottom: '1px solid #ddd', margin: '20px 0' }}>
-      <p>"{message}"</p>
+      <p>&quot;{message}&quot;</p> {/* Comillas escapadas */}
     </div>
 
     <h2>Detalles de contacto</h2>
