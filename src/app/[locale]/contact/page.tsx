@@ -1,4 +1,4 @@
-'use client';
+'use client'
 import { Box, Container, Typography, Grid, TextField, Button, Alert } from "@mui/material";
 import { useState } from "react";
 import { useTranslations } from "next-intl";
@@ -6,48 +6,33 @@ import { sendEmail } from "@/app/api/send";
 
 export default function Contact() {
   const t = useTranslations("Contact");
-  const [isSubmitted, setIsSubmitted] = useState(false);  // Estado para manejar el mensaje de éxito
-  const [error, setError] = useState<string | null>(null); // Estado para manejar errores
+  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+  const [loading, setLoading] = useState(false);
 
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
+    setLoading(true);
+    setError(null);
 
     const formData = new FormData(event.currentTarget);
-    const name = formData.get("name")?.toString();
-    const email = formData.get("email")?.toString();
-    const message = formData.get("message")?.toString();
-
-    // Validar que los campos no estén vacíos
-    if (!name || !email || !message) {
-      setError("Por favor, completa todos los campos requeridos."); // Mensaje de error
-      setIsSubmitted(false); // Asegurarse de que el estado de éxito esté en falso
-      return; // No enviar si hay campos vacíos
-    }
-
-    setError(null); // Restablecer error antes de enviar
 
     try {
-      // Llamar a la función para enviar el correo
       await sendEmail(formData);
-
-      // Si se envía el correo exitosamente, mostrar mensaje de éxito
       setIsSubmitted(true);
-
-      // Verificar si event.currentTarget es válido antes de llamar a reset
-      if (event.currentTarget) {
-        event.currentTarget.reset();  // Restablecer el formulario
-      }
+      event.currentTarget.reset(); // Restablecer el formulario
 
       // Refrescar la página después de 2 segundos
       setTimeout(() => {
-        window.location.reload(); // O también puedes usar router.push para navegar a la misma ruta
-      }, 5000);
+        window.location.reload();
+      }, 2000);
 
     } catch (err) {
-      // Manejar error al enviar el correo
       console.error(err); // Mostrar el error en la consola para depuración
       setError("Hubo un error al enviar el formulario. Inténtalo de nuevo.");
-      setIsSubmitted(false); // Asegurarse de que el estado de éxito esté en falso
+      setIsSubmitted(false);
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -59,13 +44,13 @@ export default function Contact() {
           <Grid item xs={12} md={6}>
             <Box>
               <Typography>
-                {t("subtitle")},
+                {t("subtitle")}, {/* Subtítulo de traducción */}
               </Typography>
               <Typography variant="h3">
-                {t("title")}
+                {t("title")} {/* Título de traducción */}
               </Typography>
               <Typography variant="subtitle1" sx={{ color: "text.secondary" }}>
-                {t("text")}.
+                {t("text")} {/* Texto de traducción */}
               </Typography>
               <Box>
                 {isSubmitted && (
@@ -73,11 +58,13 @@ export default function Contact() {
                     {t("successMessage")} {/* Mensaje de éxito */}
                   </Alert>
                 )}
+
                 {error && (
                   <Alert severity="error" sx={{ mb: 2 }}>
                     {error} {/* Mostrar error si ocurre */}
                   </Alert>
                 )}
+
                 <form id="contactForm" onSubmit={handleSubmit} noValidate autoComplete="off">
                   <TextField
                     fullWidth
@@ -125,8 +112,9 @@ export default function Contact() {
                     color="primary"
                     type="submit"
                     sx={{ mt: 2 }}
+                    disabled={loading} // Deshabilitar el botón mientras se envía el formulario
                   >
-                    {t("btnText")} {/* Mostrar texto del botón */}
+                    {loading ? t("sending") : t("btnText")} {/* Mostrar texto de "Enviando" */}
                   </Button>
                 </form>
               </Box>
