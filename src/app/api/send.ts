@@ -26,7 +26,7 @@ export const sendEmail = async (formData: FormData) => {
 
   // Envío del correo electrónico con formato HTML
   await resend.emails.send({
-    from: "Acme <onboarding@resend.dev>",
+    from: "portfolio-v3-nu-ten.vercel",
     to: ['ludwingarmijosaavedra@gmail.com'],
     subject: 'Contact Form Submission',
     replyTo: email as string,
