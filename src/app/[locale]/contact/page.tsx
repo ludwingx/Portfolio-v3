@@ -23,7 +23,7 @@ export default function Contact() {
 
       // Verifica si currentTarget es válido antes de resetear
       if (event.currentTarget) {
-        event.currentTarget.reset(); // Restablecer el formulario
+        event.currentTarget.reset(); // Restablecer el formul ario
       }
 
       // Refrescar la página después de 2 segundos
