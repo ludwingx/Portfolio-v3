@@ -3,7 +3,7 @@ import { EmailTemplate } from "@/components/EmailTemplate";
 import { validateString } from "@/utils/utils";
 import { Resend } from "resend";
 const resend = new Resend(process.env.RESEND_API_KEY);
-
+resend.apiKeys.create({ name: 'Production' });
 export const sendEmail = async (formData: FormData) => {
   const name = formData.get('name');
   const email = formData.get('email');
