@@ -90,16 +90,13 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           },
         }}
       />
-
       <CardContent
         className="card-content"
         sx={{ transition: "opacity 0.3s ease" }}
       >
         <Typography sx={{ fontWeight: "bold" }}>{title}</Typography>
-
       </CardContent>
       <CardActions>
-
         <Typography variant="body2" color="text.secondary">
           {technologies.join(", ")}
         </Typography>
@@ -114,12 +111,12 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           height: "100%",
           backgroundColor: "rgba(0, 0, 0, 0.7)",
           color: "white",
-          opacity: 0, // Inicialmente oculta
-          transition: "opacity 0.3s ease, backdrop-filter 0.3s ease", // Transición suave para el blur
+          opacity: 0,
+          transition: "opacity 0.3s ease, backdrop-filter 0.3s ease",
           padding: 2,
           display: "flex",
           flexDirection: "column",
-          justifyContent: "center", // Centra el contenido verticalmente
+          justifyContent: "center",
           alignItems: "center", // Centra el contenido horizontalmente
           textAlign: "center",
         }}

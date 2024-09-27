@@ -7,7 +7,7 @@ import ProjectCard from "./projects/ProjectCard";
 
 export default function Home() {
   const t = useTranslations("Home");
-  const messages = useMessages() as { Projects: { [key: string]: any } }; // Aserción de tipo
+  const messages = useMessages() as { Projects: { [key: string]: any } };
   const projects = Object.keys(messages.Projects);
   return (
     <Container>

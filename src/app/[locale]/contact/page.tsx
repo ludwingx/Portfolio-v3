@@ -20,18 +20,14 @@ export default function Contact() {
     try {
       await sendEmail(formData);
       setIsSubmitted(true);
-
-      // Verifica si currentTarget es válido antes de resetear
       if (event.currentTarget) {
-        event.currentTarget.reset(); // Restablecer el formul ario
+        event.currentTarget.reset();
       }
-
-      // Refrescar la página después de 2 segundos
       setTimeout(() => {
         window.location.reload();
       }, 2000);
     } catch (err) {
-      console.error(err); // Mostrar el error en la consola para depuración
+      console.error(err);
       setError("Hubo un error al enviar el formulario. Inténtalo de nuevo.");
       setIsSubmitted(false);
     } finally {
@@ -131,6 +127,12 @@ export default function Contact() {
               <Typography variant="h6" sx={{ textAlign: 'end', color: 'text.secondary' }}>
                 Santa Cruz de la Sierra, <span style={{ fontWeight: 'bold' }}>Santa Cruz</span>
               </Typography>
+            </Box>
+            <br />
+            <br />
+            <Box>
+              <Typography variant="h5" sx={{ textAlign: 'end' }} fontWeight="bold">Redes Sociales</Typography>
+
             </Box>
           </Grid>
         </Grid>

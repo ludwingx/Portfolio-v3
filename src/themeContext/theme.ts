@@ -66,11 +66,11 @@ export const AppLightTheme: Theme = createTheme({
           backgroundColor: '--background-color',
           overflow: 'hidden',
           borderRadius: '10px',
-          boxShadow: '0 0 15px rgba(0, 28, 85, 0.5)', // Sombra azul al hacer hover
+          boxShadow: '0 0 15px rgba(0, 28, 85, 0.5)',
           textAlign: "start",
           transition: 'box-shadow 0.3s ease',
           '&:hover': {
-            boxShadow: '0 0 20px rgba(0, 28, 85, 0.7)', // Sombra azul más intensa al hacer hover
+            boxShadow: '0 0 20px rgba(0, 28, 85, 0.7)',
           },
         },
       },
