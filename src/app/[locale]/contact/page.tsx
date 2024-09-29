@@ -1,9 +1,9 @@
 'use client'
-import { Box, Container, Typography, Grid, TextField, Button, Alert } from "@mui/material";
+import { Box, Container, Typography, Grid, TextField, Button, Alert, Link } from "@mui/material";
 import { useState } from "react";
 import { useTranslations } from "next-intl";
 import { sendEmail } from "@/app/api/send";
-
+import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 export default function Contact() {
   const t = useTranslations("Contact");
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -131,8 +131,18 @@ export default function Contact() {
             <br />
             <br />
             <Box>
-              <Typography variant="h5" sx={{ textAlign: 'end' }} fontWeight="bold">Redes Sociales</Typography>
-
+              <Typography variant="h5" sx={{ textAlign: 'start' }} fontWeight="bold">Redes Sociales</Typography>
+              <Box sx={{ display: 'flex', justifyContent: 'start', gap: 2, mt: 1 }}>
+                <Link href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                  <FaLinkedin size={32} color="#0e76a8" />
+                </Link>
+                <Link href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                  <FaGithub size={32} color="#000" />
+                </Link>
+                <Link href="https://wa.me/+59175076889" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+                  <FaWhatsapp size={32} color="#25D366" />
+                </Link>
+              </Box>
             </Box>
           </Grid>
         </Grid>
