@@ -128,20 +128,22 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           {description}
         </Typography>
         <Image src={imageLogoUrl} alt="App" width={70} height={70}></Image>
-        <Link
-          href="/app"
-          sx={{
-            color: "#ffffff",
-            marginTop: 2,
-            "&:hover": {
-              textDecoration: "underline",
-              color: "#ffffff",
-              boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
-            },
-          }}
-        >
-          {useTranslations('Home')('linkApp')}
-        </Link>
+        {!inDevelopment && (
+                  <Link
+                  href={url}
+                  sx={{
+                    color: "#ffffff",
+                    marginTop: 2,
+                    "&:hover": {
+                      textDecoration: "underline",
+                      color: "#ffffff",
+                      boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
+                    },
+                  }}
+                >
+                  {useTranslations('Home')('linkApp')}
+                </Link>
+        )}
       </CardContent>
     </Card>
   );

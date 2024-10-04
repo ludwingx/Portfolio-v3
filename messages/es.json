@@ -19,7 +19,7 @@
   },
   "Aboutme": {
     "title": "Hola, soy Ludwing 👋",
-    "subtitle": "Soy un apasionado desarrollador web con experiencia en front-end, back-end y bases de datos. He trabajado en proyectos independientes y colaborativos, adquiriendo habilidades en todo el ciclo de vida del software. Me enfoco en aplicar buenas prácticas de arquitectura y patrones de diseño para mejorar la escalabilidad y rendimiento, fusionando creatividad y código para crear productos funcionales y atractivos.",
+    "subtitle": "Soy un apasionado por el desarrollo web, con experiencia en front-end, back-end y bases de datos. He trabajado en proyectos independientes y colaborativos, adquiriendo habilidades que abarcan todo el proceso de desarrollo. Mi aprendizaje ha sido en gran parte autodidacta, complementando mi formación con la investigación y práctica constante de nuevas tecnologías. A través de la experimentación y el desarrollo de soluciones para diferentes proyectos, sigo mejorando mis habilidades y creciendo profesionalmente.",
     "buttonCv": "Ver CV",
 
     "title3": "Formación Académica",
@@ -34,6 +34,12 @@
     "dates2": "Febrero 2020 - Noviembre 2022",
     "city2": "Santa Cruz, Bolivia",
 
+    "title4": "Habilidades",
+    "subtitleSkill1": "Lenguajes",
+    "subtitleSkill2": "Librerias & Frameworks",
+    "subtitleSkill3": "Control de versiones",
+    "subtitleSkill4": "Bases de datos",
+    "subtitleSkill5": "Otras Herramientas",
     "title2": "La historia de mis tecnologías",
     "subtitle2": "A lo largo de mi carrera, he trabajado con una amplia gama de tecnologías que me han permitido crear soluciones completas y eficientes en cada etapa de desarrollo:",
     "technologies": {
@@ -54,7 +60,7 @@
   "Contact":{
     "subtitle": "Lo que sea que necesites",
     "title": "Contáctame",
-    "text": "Ya sea que tenga una pregunta simple o sepa exactamente lo que quiere",
+    "text": "Ya sea que tenga una pregunta simple o sepa exactamente lo que quiere.",
     "labelFormName": "Nombre",
     "placeholderFormName": "Tu nombre",
     "labelFormEmail": "Correo Electronico",
@@ -85,16 +91,15 @@
   "Projects": {
     "project1": [
       {
-        "title": "Aplicación Nativa y Web para la Farmacia Santa Rosita",
+        "title": "Aplicación Web para la Farmacia Santa Rosita",
         "name": "Santa Rosita Manager",
         "description": "Aplicación en desarrollo para optimizar y gestionar los procesos internos de la farmacia, mejorando la eficiencia en el manejo de inventarios, pedidos y atención al cliente.",
         "technologies": [
-          "Expo",
+          "NextJS",
           "TypeScript",
           "CSS",
-          "Astro (planificado)",
-          "NestJS (planificado)",
-          "PostgreSQL (planificado)"
+          "NestJS",
+          "PostgreSQL"
         ],
         "type": ["Aplicación Móvil", "Aplicación Web"],
         "imageUrl": "/img/farmaciaSantaRosita.png",

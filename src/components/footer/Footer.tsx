@@ -9,7 +9,7 @@ const Footer = () => {
     <Typography>
       {t("text")}{" "}
       <Link
-        href="https://ludwing.dev"
+        href="https://portfolio-v3-nu-ten.vercel.app/es"
         target="_blank"
         rel="noreferrer"
         sx={{
