@@ -60,7 +60,7 @@ export default function Projects() {
               <CardMedia
                 component="img"
                 height="140"
-                image="/img/githubPortada.png" // Asegúrate de usar la imagen deseada aquí
+                image="/img/githubPortada.PNG" // Asegúrate de usar la imagen deseada aquí
                 alt="Proyectos Adicionales"
               />
               <CardContent>
