@@ -9,7 +9,7 @@ import {
 } from "react-icons/si";
 import { BiLogoPostgresql } from "react-icons/bi";
 import Image from "next/image";
-
+import { useTranslations } from "next-intl";
 // Stack actual
 const currentStack = [
   { name: "HTML5", icon: <FaHtml5 title="HTML5" style={{ color: "#E34F26", fontSize: '34px' }} /> },
@@ -18,7 +18,7 @@ const currentStack = [
   { name: "TypeScript", icon: <SiTypescript title="TypeScript" style={{ color: "#007ACC", fontSize: '34px' }} /> },
   { name: "React JS", icon: <FaReact title="React" style={{ color: "#61DBFB", fontSize: '34px' }} /> },
   { name: "Astro", icon: <SiAstro title="Astro" style={{ color: "#FF5D00", fontSize: '34px' }} /> },
-  { name: "Next JS", icon: <SiNextdotjs title="Next.js" style={{ color: "#000000", fontSize: '34px' }} /> },
+  { name: "Next JS", icon: <SiNextdotjs title="Next.js" style={{ color: "var(--text-color)", fontSize: '34px' }} /> },
   { name: "Expo", icon: <SiExpo title="Expo" style={{ color: "#00A8E8", fontSize: '34px' }} /> },
   { name: "Nest JS", icon: <SiNestjs title="Nest.js" style={{ color: "#E0234E", fontSize: '34px' }} /> },
   { name: "PostgreSQL", icon: <BiLogoPostgresql title="PostgreSQL" style={{ color: "#336791", fontSize: '34px' }} /> },
@@ -42,9 +42,9 @@ const learnedStack = [
 
 // Otras herramientas
 const otherTools = [
-  { name: "GitHub", icon: <FaGithub title="GitHub" style={{ color: "#181717", fontSize: '34px' }} /> },
+  { name: "GitHub", icon: <FaGithub title="GitHub" style={{ color: "var(--text-color)", fontSize: '34px' }} /> },
   { name: "Git", icon: <FaGitAlt title="Git" style={{ color: "#F05032", fontSize: '34px' }} /> },
-  { name: "Notion", icon: <SiNotion title="Notion" style={{ color: "#000000", fontSize: '34px' }} /> },
+  { name: "Notion", icon: <SiNotion title="Notion" style={{ color: "var(--text-color)", fontSize: '34px' }} /> },
   { name: "Figma", icon: <SiFigma title="Figma" style={{ color: "#F24E1E", fontSize: '34px' }} /> },
   { name: "Photoshop", icon: <SiAdobephotoshop title="Photoshop" style={{ color: "#31A8FF", fontSize: '34px' }} /> },
   { name: "Illustrator", icon: <SiAdobeillustrator title="Illustrator" style={{ color: "#FF9A00", fontSize: '34px' }} /> },
@@ -56,6 +56,8 @@ const otherTools = [
 
 // Componente principal
 const Skills = () => {
+  const t = useTranslations("Aboutme");
+
   const renderSkills = (skillsArray) =>
     skillsArray.map((skill, index) => (
       <Grid item xs={4} sm={4} md={4} lg={1.6} key={index} className="skill-icon" sx={{ textAlign: 'center', mb: 2 }}>
@@ -74,7 +76,7 @@ const Skills = () => {
       <Grid container spacing={3} justifyContent="center">
         <Grid item xs={12}>
           <Typography variant="h6" align="center" mb={2} data-aos="fade-zoom-in">
-            Stack Actual
+          {t('subtitleSkill1')}
           </Typography>
           <Grid container justifyContent="center" spacing={3} data-aos="fade-up" data-aos-delay="100">
             {renderSkills(currentStack)}
@@ -84,7 +86,7 @@ const Skills = () => {
         {/* Sección de Tecnologías Aprendidas */}
         <Grid item xs={12}>
           <Typography variant="h6" align="center" mb={2} data-aos="fade-zoom-in">
-          Tecnologías que utilicé en proyectos anteriores
+          {t('subtitleSkill2')}
           </Typography>
           <Grid container justifyContent="center" spacing={3} data-aos="fade-up" data-aos-delay="200">
             {renderSkills(learnedStack)}
@@ -94,7 +96,7 @@ const Skills = () => {
         {/* Otras Herramientas */}
         <Grid item xs={12}>
           <Typography variant="h6" align="center" mb={2} data-aos="fade-zoom-in">
-            Otras Herramientas
+          {t('subtitleSkill3')}
           </Typography>
           <Grid container justifyContent="center" spacing={3} data-aos="fade-up" data-aos-delay="300">
             {renderSkills(otherTools)}

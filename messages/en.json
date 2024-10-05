@@ -1,42 +1,39 @@
 {
   "Home": {
-    "title": "Hi, I'm Ludwing 👋, a Full-Stack Web Developer",
-    "subtitle": "I specialize in creating innovative web solutions using a variety of technologies. My experience in the field has helped me refine my skills and tackle diverse challenges in web development.",
+    "title": "Hello, I'm Ludwing 👋, Full-Stack Web Developer",
+    "subtitle": "I specialize in creating innovative web solutions using a variety of technologies. My experience in the field has helped me hone my skills and tackle various challenges in web development.",
     "title2": "Innovate. Develop.",
     "title2r": "Evolve.",
-    "subtitle2": "I have worked on developing systems from start to finish. From database planning and design to creating intuitive user interfaces and continuous implementation, I ensure every project stage is successful.",
+    "subtitle2": "I have worked on system development from start to finish. From planning and database design to creating intuitive user interfaces and continuous deployment.",
     "service1Title": "Web/Mobile Development",
-    "service1Description": "I create high-quality websites and mobile applications tailored to your business needs. Whether you need to improve your online presence or develop a new app, I handle both the front-end and back-end.",
+    "service1Description": "I build high-quality websites and mobile applications that fit your business needs. Whether you need to improve your online presence or develop a new app, I handle both the front-end and back-end.",
     "service2Title": "UX Research/Design",
-    "service2Description": "I work to enhance user experience with intuitive and effective designs. I conduct research and design interfaces to ensure users have a smooth and satisfying experience, boosting satisfaction and retention.",
+    "service2Description": "I work to improve user experience with intuitive and effective designs. I research and design interfaces to ensure users enjoy a smooth and satisfying experience, increasing satisfaction and retention.",
     "service3Title": "Technical Consulting",
-    "service3Description": "I provide support at every stage of the project, from requirements analysis and design to development, testing, and implementation. I ensure comprehensive solutions tailored to your specific needs.",
-    "title3": "Featured Works",
-    "subtitle3": "Explore my projects, each completed with passion and delivered on time, exceeding expectations.",
+    "service3Description": "I provide support at every stage of the project, from requirements analysis and design to development, testing, and implementation. I ensure complete solutions tailored to your specific needs.",
+    "title3": "Selected Works",
+    "subtitle3": "Explore my projects, each created with passion and delivered on time, exceeding expectations.",
     "linkApp": "View App",
     "linkGithub": "Code on Github",
-    "btnText1": "Let's work together"
+    "btnText1": "Let's Work Together"
   },
   "Aboutme": {
-    "title": "Hi, I'm Ludwing 👋",
-    "subtitle": "I am a passionate web developer with experience in front-end, back-end, and databases. I have worked on both independent and collaborative projects, gaining skills across the entire software lifecycle. I focus on applying good architectural practices and design patterns to enhance scalability and performance, combining creativity and code to create functional and attractive products.",
-    "buttonCv": "Download CV",
-    "title2": "The Story of My Technologies",
-    "subtitle2": "Throughout my career, I have worked with a wide range of technologies that have enabled me to create complete and efficient solutions at every stage of development:",
-    "technologies": {
-      "programmingLanguagesTitle": "💻 Programming Languages:",
-      "programmingLanguagesText": "I am familiar with several languages, such as C#, Python, JavaScript, and TypeScript.",
-      "frontendTitle": "🎨 Frontend:",
-      "frontendText": "My experience spans Angular, React, Next.js, Astro, Bootstrap, Material UI, and Shadcn, with which I build modern and efficient user interfaces.",
-      "backendTitle": "🔧 Backend:",
-      "backendText": "I have a solid foundation in backend development, with competence in Node.js, Express.js, Laravel, and hands-on experience with PHP.",
-      "databasesTitle": "💾 Databases:",
-      "databasesText": "I work with databases like PostgreSQL and MySQL, allowing me to create robust, data-driven applications.",
-      "mobileDevelopmentTitle": "📱 Mobile Development:",
-      "mobileDevelopmentText": "My skills extend to mobile development, particularly in React Native and practical experience with Ionic.",
-      "toolsTitle": "🛠️ Tools:",
-      "toolsText": "For my projects, I often use tools like Git, Postman, Visual Studio Code, Adobe Photoshop, Draw.io, Vercel, and Supabase."
-    }
+    "title": "Hello, I'm Ludwing 👋",
+    "subtitle": "I am passionate about web development, with experience in front-end, back-end, and databases. I have worked on independent and collaborative projects, gaining skills across the entire development process. My learning has been largely self-taught, complemented by constant research and practice of new technologies. Through experimentation and solving different project challenges, I continue to enhance my skills and grow professionally.",
+    "buttonCv": "View CV",
+    "title3": "Academic Background",
+    "nameAcademic": "Systems Engineering",
+    "nameInstitution": "at Universidad Privada Cumbre",
+    "dates": "April 2021 - Present",
+    "city": "Santa Cruz, Bolivia",
+    "nameAcademic2": "Higher Technician in Computer Systems",
+    "nameInstitution2": "at Instituto Tecnológico \"Jesús María\" Fe Y Alegría",
+    "dates2": "February 2020 - November 2022",
+    "city2": "Santa Cruz, Bolivia",
+    "title4": "Skills",
+    "subtitleSkill1": "Current tool stack",
+    "subtitleSkill2": "Technologies I used in previous projects",
+    "subtitleSkill3": "Other tools"
   },
   "Contact": {
     "subtitle": "Whatever you need",
@@ -52,8 +49,8 @@
     "placeholderFormMessage": "How can I help you?",
     "btnText": "Send",
     "sending": "Sending...",
-    "successMessage": "Message sent successfully!",
-    "errorMessage": "There was an error sending the form. Please try again."
+    "successMessage": "Your message has been successfully sent.",
+    "errorMessage": "There was an error sending the form, please try again."
   },
   "Navbar": {
     "home": "HOME",
@@ -63,25 +60,28 @@
   },
   "Footer": {
     "text": "Developed by",
-    "text2": "with lots of ❤️ and no ☕"
+    "text2": "with lots of ❤️ and without ☕"
   },
   "ProjectPage": {
     "title": "Projects",
-    "description": "Discover some of the projects I have been involved in. Each project has a detailed description and a sample image."
+    "description": "Discover some of the projects I have been involved in. Each project has a detailed description and a sample image.",
+    "titleCard": "Other Projects",
+    "imgCard": "/img/githubPortada.png",
+    "textCard": "My other projects are in private repositories. For more information, feel free to contact me.",
+    "btnTxtCard": "Contact"
   },
   "Projects": {
     "project1": [
       {
-        "title": "Native and Web Application for Santa Rosita Pharmacy",
+        "title": "Web Application for Santa Rosita Pharmacy",
         "name": "Santa Rosita Manager",
-        "description": "Ongoing development of an application to optimize and manage internal pharmacy processes, improving inventory handling, orders, and customer service.",
+        "description": "Application in development to optimize and manage the internal processes of the pharmacy, improving efficiency in inventory management, orders, and customer service.",
         "technologies": [
-          "Expo",
+          "NextJS",
           "TypeScript",
           "CSS",
-          "Astro (planned)",
-          "NestJS (planned)",
-          "PostgreSQL (planned)"
+          "NestJS",
+          "PostgreSQL"
         ],
         "type": ["Mobile Application", "Web Application"],
         "imageUrl": "/img/farmaciaSantaRosita.png",
@@ -93,9 +93,9 @@
     ],
     "project2": [
       {
-        "title": "Web Application for AstroboyXL Listening Party Event",
+        "title": "Web Application for the AstroboyXL Listening Party Event",
         "name": "Astroboyxl.shop",
-        "description": "Web application for the AstroboyXL LISTENING PARTY event, managing ticket sales, user registration, and exclusive product purchases from the Trucho store.",
+        "description": "Web application for the AstroboyXL LISTENING PARTY event, for ticket purchases, user management, and purchasing exclusive products from the Trucho store.",
         "technologies": [
           "HTML",
           "CSS",
@@ -117,9 +117,9 @@
     ],
     "project3": [
       {
-        "title": "Web Mobile Application for CEA",
+        "title": "Mobile Web App for CEA",
         "name": "App CEA",
-        "description": "Web mobile app for monitoring and tracking rescued wildlife by CEA of the Autonomous Government of Santa Cruz.",
+        "description": "Mobile web app for monitoring and tracking wild animals rescued by the CEA of the Autonomous Departmental Government of Santa Cruz.",
         "technologies": [
           "HTML",
           "TypeScript",
@@ -139,9 +139,9 @@
     ],
     "project4": [
       {
-        "title": "Landing Page for My First Professional Portfolio",
+        "title": "Landing Page of My First Professional Portfolio",
         "name": "Portfolio",
-        "description": "Landing Page for my first personal portfolio, where I showcased my projects and skills.",
+        "description": "Landing page for my first personal portfolio, where I showcased my projects and skills.",
         "technologies": ["Angular", "TypeScript", "SCSS", "Bootstrap"],
         "type": ["Landing Page"],
         "imageUrl": "/img/mockup/portfoliov2.svg",
