@@ -58,8 +58,8 @@ const otherTools = [
 const Skills = () => {
   const t = useTranslations("Aboutme");
 
-  const renderSkills = (skillsArray) =>
-    skillsArray.map((skill, index) => (
+  const renderSkills = (skillsArray: { name: string; icon: JSX.Element }[]) => {
+    return skillsArray.map((skill, index) => (
       <Grid item xs={4} sm={4} md={4} lg={1.6} key={index} className="skill-icon" sx={{ textAlign: 'center', mb: 2 }}>
         <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
           {skill.icon}
@@ -69,6 +69,7 @@ const Skills = () => {
         </div>
       </Grid>
     ));
+  };
 
   return (
     <Box className="content p-3 section" id="skills">
@@ -76,7 +77,7 @@ const Skills = () => {
       <Grid container spacing={3} justifyContent="center">
         <Grid item xs={12}>
           <Typography variant="h6" align="center" mb={2} data-aos="fade-zoom-in">
-          {t('subtitleSkill1')}
+            {t('subtitleSkill1')}
           </Typography>
           <Grid container justifyContent="center" spacing={3} data-aos="fade-up" data-aos-delay="100">
             {renderSkills(currentStack)}
@@ -86,7 +87,7 @@ const Skills = () => {
         {/* Sección de Tecnologías Aprendidas */}
         <Grid item xs={12}>
           <Typography variant="h6" align="center" mb={2} data-aos="fade-zoom-in">
-          {t('subtitleSkill2')}
+            {t('subtitleSkill2')}
           </Typography>
           <Grid container justifyContent="center" spacing={3} data-aos="fade-up" data-aos-delay="200">
             {renderSkills(learnedStack)}
@@ -96,7 +97,7 @@ const Skills = () => {
         {/* Otras Herramientas */}
         <Grid item xs={12}>
           <Typography variant="h6" align="center" mb={2} data-aos="fade-zoom-in">
-          {t('subtitleSkill3')}
+            {t('subtitleSkill3')}
           </Typography>
           <Grid container justifyContent="center" spacing={3} data-aos="fade-up" data-aos-delay="300">
             {renderSkills(otherTools)}
