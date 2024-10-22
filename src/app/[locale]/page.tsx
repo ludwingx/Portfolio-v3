@@ -18,26 +18,28 @@ export default function Home() {
           alignItems: "center",
           minHeight: "100vh",
           textAlign: "center",
-          paddingTop: 10,
+          paddingTop: 6,
         }}
       >
         {/* Títulos y Descripción General */}
         <Box
           sx={{
             gap: 6,
-            p: 4,
+            p: 2,
             textAlign: "center",
             display: "flex",
             flexDirection: "column",
-            maxWidth: "800px",
+            maxWidth: "1000px",
           }}
         >
           <Typography variant="h2" gutterBottom sx={{ fontWeight: "bold" }}>
             {t("title")}
           </Typography>
           <Typography variant="h5">{t("subtitle")}</Typography>
-        </Box>
 
+        </Box>
+        <Button sx={{ mt: 3 }} variant="contained"  startIcon={<AutoAwesomeIcon />}
+            endIcon={<AutoAwesomeIcon />} href="/projects">{t("btnText")}</Button>
         <Box
           sx={{
             mt: 8,
