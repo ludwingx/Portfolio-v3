@@ -1,4 +1,11 @@
-import { Box, Typography, Container, Button, Grid, Divider } from "@mui/material";
+import {
+  Box,
+  Typography,
+  Container,
+  Button,
+  Grid,
+  Divider,
+} from "@mui/material";
 import { useMessages, useTranslations } from "next-intl";
 import AutoAwesomeIcon from "@mui/icons-material/AutoAwesome";
 import { FaLaptopCode, FaTools } from "react-icons/fa";
@@ -36,10 +43,16 @@ export default function Home() {
             {t("title")}
           </Typography>
           <Typography variant="h5">{t("subtitle")}</Typography>
-
         </Box>
-        <Button sx={{ mt: 3 }} variant="contained"  startIcon={<AutoAwesomeIcon />}
-            endIcon={<AutoAwesomeIcon />} href="/projects">{t("btnText")}</Button>
+        <Button
+          sx={{ mt: 3 }}
+          variant="contained"
+          startIcon={<AutoAwesomeIcon />}
+          endIcon={<AutoAwesomeIcon />}
+          href="/projects"
+        >
+          {t("btnText")}
+        </Button>
         <Box
           sx={{
             mt: 8,
@@ -49,8 +62,12 @@ export default function Home() {
             paddingBottom: 5,
           }}
         >
-          <Typography variant="h3">{t("title2")} <span className="title-effect">{t("title2r")}</span></Typography>
-          <Typography variant="h5" mt={2}>{t("subtitle2")}</Typography>
+          <Typography variant="h3">
+            {t("title2")} <span className="title-effect">{t("title2r")}</span>
+          </Typography>
+          <Typography variant="h5" mt={2}>
+            {t("subtitle2")}
+          </Typography>
         </Box>
 
         {/* Servicios */}
@@ -167,9 +184,7 @@ export default function Home() {
 
         <Box sx={{ textAlign: "center", mt: 7, mb: 4 }}>
           <Typography variant="h4">{t("title3")}</Typography>
-          <Typography>
-            {t("subtitle3")}
-          </Typography>
+          <Typography>{t("subtitle3")}</Typography>
           <Box sx={{ mt: 4 }}>
             <Grid container spacing={4}>
               {projects
@@ -184,8 +199,12 @@ export default function Home() {
                       technologies={messages.Projects[project][0].technologies}
                       name={messages.Projects[project][0].name}
                       type={messages.Projects[project][0].type}
-                      inDevelopment={messages.Projects[project][0].inDevelopment}
-                      url={messages.Projects[project][0].url} favorite={false}                    />
+                      inDevelopment={
+                        messages.Projects[project][0].inDevelopment
+                      }
+                      url={messages.Projects[project][0].url}
+                      favorite={false}
+                    />
                   </Grid>
                 ))}
             </Grid>

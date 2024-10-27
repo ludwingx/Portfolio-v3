@@ -21,58 +21,63 @@ export default function AboutMe() {
   };
 
   return (
-    <Container    >
-      {/* Foto de perfil centrada */}
-      <Box sx={{ display: "flex", justifyContent: "center", mt: 10 }}>
-        <Avatar
-          sx={{
-            width: { xs: 150, sm: 200 },
-            height: { xs: 150, sm: 200 },
-            border: "3px solid",
-            boxShadow: 10,
-          }}
-          alt="Foto de perfil de Ludwing Armijo"
-          src="/img/photoPerfil.svg"
-        />
-      </Box>
+    <Container>
+      {/* Estructura con Grid para imagen y texto */}
+      <Grid container spacing={4} alignItems="center" mt={10}>
+        {/* Foto de perfil */}
+        <Grid item xs={12} sm={6} md={4} sx={{ display: "flex", justifyContent: "center" }}>
+          <Avatar
+            sx={{
+              width: { xs: 150, sm: 270 },
+              height: { xs: 150, sm: 270 },
+              border: "3px solid",
+              boxShadow: 10,
+            }}
+            alt="Foto de perfil de Ludwing Armijo"
+            src="/img/photoPerfil.svg"
+          />
+        </Grid>
 
-      {/* Título y subtítulo */}
-      <Box sx={{ textAlign: "center", mt: 5,  mr:2, ml: 2 }}>
-        <Typography sx={{ fontWeight: "bold" }} variant="h3">
-          {t("title")}
-        </Typography>
-        <Typography
-          sx={{ mt: 4, color: "text.secondary", fontSize: { xs: 16, sm: 20 } }}
-          variant="h6"
-        >
-          {t("subtitle")}
-        </Typography>
-      </Box>
+        {/* Contenido de texto */}
+        <Grid item xs={12} sm={6} md={8}>
+          <Box sx={{ textAlign: "left" }}>
+            <Typography sx={{ fontWeight: "bold" }} variant="h3">
+              {t("title")}
+            </Typography>
+            <Typography
+              sx={{ mt: 4, color: "text.secondary", fontSize: { xs: 16, sm: 20 } }}
+              variant="h6"
+            >
+              {t("subtitle")}
+            </Typography>
 
-      {/* Botón para visualizar y descargar CV */}
-      <Box sx={{ textAlign: "center", mt: 5 }}>
-        <Button
-          variant="contained"
-          color="primary"
-          startIcon={<VisibilityIcon />} // El ícono aparece al inicio del botón
-          onClick={handleViewCv}
-        >
-          {t("buttonCv")}
-        </Button>
-      </Box>
+            {/* Botón para visualizar y descargar CV */}
+            <Box sx={{ textAlign: "left", mt: 5 }}>
+              <Button
+                variant="contained"
+                color="primary"
+                startIcon={<VisibilityIcon />}
+                onClick={handleViewCv}
+              >
+                {t("buttonCv")}
+              </Button>
+            </Box>
+          </Box>
+        </Grid>
+      </Grid>
 
       {/* Formación académica */}
-      <Box sx={{ mt: 20,  }}>
+      <Box sx={{ mt: 20 }}>
         <Typography sx={{ fontWeight: "bold", textAlign: "center" }} variant="h4">
           {t("title3")} 🎓
         </Typography>
 
-        <Box sx={{ mt: 1, mr:2, ml: 2 }}>
+        <Grid container spacing={2} mt={2} justifyContent="center">
           {/* Primer título académico */}
-          <Grid container spacing={2} mt={1}>
-            <Grid item xs={12}>
+          <Grid item xs={12} sm={6} md={4}>
+            <Box sx={{ textAlign: "center", border: '1px solid', borderRadius: 2, p: 2 }}>
               <Typography sx={{ fontSize: { xs: 18, sm: 22 } }}>
-                <span style={{ fontWeight: "bold" }}>✦ {t("nameAcademic")} </span>{" "}
+                <span style={{ fontWeight: "bold" }}>{t("nameAcademic")}</span>{" "}
                 <span style={{ color: "#393939" }}>{t("nameInstitution")}</span>
               </Typography>
               <Typography
@@ -83,14 +88,14 @@ export default function AboutMe() {
               >
                 {t("dates")} | {t("city")}
               </Typography>
-            </Grid>
+            </Box>
           </Grid>
 
           {/* Segundo título académico */}
-          <Grid container spacing={2} mt={1}>
-            <Grid item xs={12}>
+          <Grid item xs={12} sm={6} md={4}>
+            <Box sx={{ textAlign: "center", border: '1px solid', borderRadius: 2, p: 2 }}>
               <Typography sx={{ fontSize: { xs: 18, sm: 22 } }}>
-                <span style={{ fontWeight: "bold" }}>✦ {t("nameAcademic2")}</span>{" "}
+                <span style={{ fontWeight: "bold" }}>{t("nameAcademic2")}</span>{" "}
                 <span style={{ color: "#393939" }}>{t("nameInstitution2")}</span>
               </Typography>
               <Typography
@@ -101,9 +106,9 @@ export default function AboutMe() {
               >
                 {t("dates2")} | {t("city2")}
               </Typography>
-            </Grid>
+            </Box>
           </Grid>
-        </Box>
+        </Grid>
       </Box>
 
       {/* Habilidades */}
@@ -113,7 +118,6 @@ export default function AboutMe() {
         </Typography>
         <Skills />
       </Box>
-
     </Container>
   );
 }
