@@ -1,61 +1,57 @@
 {
-  "Home": {
-    "title": "Hola, soy Ludwing 👋, Desarrollador Web Full-Stack",
-    "subtitle": "Me especializo en crear soluciones web innovadoras utilizando una variedad de tecnologías. Mi experiencia en el campo me ha ayudado a perfeccionar mis habilidades y a enfrentar diversos retos en el desarrollo web.",
-    "title2": "Innovar. Desarrollar. ",
-    "title2r": "Evolucionar.",
-    "subtitle2": "He trabajado en el desarrollo de sistemas de principio a fin. Desde la planificación y el diseño de bases de datos hasta la creación de interfaces de usuario intuitivas y la implementación continua.",
-    "service1Title": "Desarrollo Web/Móvil",
-    "service1Description": "Creo sitios web y aplicaciones móviles de alta calidad que se ajustan a las necesidades de tu negocio. Ya sea que necesites mejorar tu presencia en línea o desarrollar una nueva aplicación, me encargo tanto del front-end como del back-end.",
-    "service2Title": "Investigación/Diseño UX",
-    "service2Description": "Trabajo para mejorar la experiencia del usuario con diseños intuitivos y efectivos. Investigo y diseño interfaces para asegurar que los usuarios disfruten de una experiencia fluida y satisfactoria, lo que incrementa la satisfacción y la retención.",
-    "service3Title": "Consultoría Técnica",
-    "service3Description": "Brindo apoyo en cada fase del proyecto, desde el análisis de requisitos y el diseño hasta el desarrollo, pruebas e implementación. Me aseguro de ofrecer soluciones completas y adaptadas a tus necesidades específicas.",
-    "title3": "Obras escogidas",
-    "subtitle3": "Explora mis proyectos, cada uno realizado con pasión y entregado a tiempo, superando las expectativas",
+"Home": {
+    "title": "Hola, soy Ludwing 👋, Desarrollador Frontend",
+    "subtitle": "Me especializo en la creación de interfaces web intuitivas y funcionales. Mi enfoque está en brindar experiencias de usuario efectivas y atractivas, optimizando cada detalle en el desarrollo.",
+    "title2": "Diseñar. Desarrollar.",
+    "title2r": "Innovar.",
+    "subtitle2": "Trabajo en proyectos de principio a fin: desde el diseño de interfaces visuales hasta la implementación de componentes interactivos y optimización de rendimiento.",
+    "service1Title": "Desarrollo Frontend",
+    "service1Description": "Desarrollo interfaces web responsivas y dinámicas, orientadas a mejorar la experiencia del usuario.",
+    "service2Title": "Diseño UI/UX",
+    "service2Description": "Enfocado en crear diseños visuales intuitivos, asegurando una experiencia amigable y efectiva para cada usuario.",
+    "service3Title": "Optimización y Mejora Continua",
+  "service3Description": "Trabajo para mejorar el rendimiento y la accesibilidad de las interfaces, haciendo ajustes para que cada proyecto sea más rápido y fácil de usar.",
+    "title3": "Proyectos destacados",
+    "subtitle3": "Algunos de los proyectos donde he aplicado mis habilidades de frontend, siempre con un enfoque de innovación y precisión.",
     "linkApp": "Ver App",
-    "linkGithub": "Codigo en Github",
-    "btnText": "Mi Proyectos",
-    "btnText1": "Trabajemos juntos"
+    "linkGithub": "Código en Github",
+    "btnText": "Ver mis Proyectos",
+    "btnText1": "Contáctame"
   },
   "Aboutme": {
     "title": "Hola, soy Ludwing 👋",
-    "subtitle": "Soy un apasionado por el desarrollo web, con experiencia en front-end, back-end y bases de datos. He trabajado en proyectos independientes y colaborativos, adquiriendo habilidades que abarcan todo el proceso de desarrollo. Mi aprendizaje ha sido en gran parte autodidacta, complementando mi formación con la investigación y práctica constante de nuevas tecnologías. A través de la experimentación y el desarrollo de soluciones para diferentes proyectos, sigo mejorando mis habilidades y creciendo profesionalmente.",
+    "subtitle": "Soy un apasionado por el desarrollo frontend, enfocado en crear experiencias web memorables. Mis proyectos abarcan desde interfaces interactivas hasta aplicaciones completas, con una constante búsqueda por la innovación. Aprendo continuamente nuevas tecnologías para perfeccionar mi desarrollo profesional.",
     "buttonCv": "Ver CV",
-
     "title3": "Formación Académica",
-
     "nameAcademic": "Ingeniería de Sistemas",
-    "nameInstitution": "en Universidad Privada Cumbre",
+    "nameInstitution": "Universidad Privada Cumbre",
     "dates": "Abril 2021 - Presente",
     "city": "Santa Cruz, Bolivia",
-
     "nameAcademic2": "Técnico Superior en Sistemas Informáticos",
-    "nameInstitution2": "en Instituto Tecnológico \"Jesús María\" Fe Y Alegría",
+    "nameInstitution2": "Instituto Tecnológico \"Jesús María\" Fe Y Alegría",
     "dates2": "Febrero 2020 - Noviembre 2022",
     "city2": "Santa Cruz, Bolivia",
-
     "title4": "Habilidades",
-    "subtitleSkill1": "Stack de herramientas actuales",
-    "subtitleSkill2": "Tecnologías que utilicé en proyectos anteriores",
+    "subtitleSkill1": "Tecnologías actuales",
+    "subtitleSkill2": "Tecnologías que he utilizado",
     "subtitleSkill3": "Otras herramientas"
-    },
-  "Contact":{
-    "subtitle": "Lo que sea que necesites",
+  },
+  "Contact": {
+    "subtitle": "Cualquier consulta",
     "title": "Contáctame",
-    "text": "Ya sea que tenga una pregunta simple o sepa exactamente lo que quiere.",
+    "text": "Ya sea que tengas una pregunta o una propuesta, no dudes en escribirme.",
     "labelFormName": "Nombre",
     "placeholderFormName": "Tu nombre",
-    "labelFormEmail": "Correo Electronico",
-    "placeholderFormEmail": "Por ejemplo, johndoe@gmail.com",
-    "labelFormPhone": "Telefono",
-    "placeholderFormPhone": "El numero al que puedo llamar",
+    "labelFormEmail": "Correo Electrónico",
+    "placeholderFormEmail": "ejemplo@correo.com",
+    "labelFormPhone": "Teléfono",
+    "placeholderFormPhone": "Número de contacto",
     "labelFormMessage": "Mensaje",
     "placeholderFormMessage": "¿Cómo te puedo ayudar?",
     "btnText": "Enviar",
     "sending": "Enviando...",
-    "successMessage": "Tu mensaje ha sido enviado con éxito.",
-    "errorMessage": "Hubo un error al enviar el formulario, intentalo de nuevo."
+    "successMessage": "Mensaje enviado con éxito.",
+    "errorMessage": "Error al enviar, intenta nuevamente."
   },
   "Navbar": {
     "home": "INICIO",
@@ -65,30 +61,24 @@
   },
   "Footer": {
     "text": "Desarrollado por",
-    "text2": "con mucho ❤️ y sin ☕"
+    "text2": "con dedicación y creatividad"
   },
   "ProjectPage": {
     "title": "Proyectos",
-    "description": "Conoce algunos de los proyectos en los que he estado involucrado. Cada proyecto tiene una descripción detallada y una imagen de muestra.",
-    "titleCard": "Otros proyectos",
+    "description": "Descubre algunos de los proyectos frontend en los que he trabajado. Cada uno está desarrollado con atención al detalle.",
+    "titleCard": "Más proyectos",
     "imgCard": "/img/githubPortada.png",
-    "textCard": "Mis otros proyectos están en repositorios privados. Para más información, puedes contáctame.",
-    "btnTxtCard": "Contactar"
+    "textCard": "Otros proyectos están en repositorios privados. Contáctame para más detalles.",
+    "btnTxtCard": "Contáctame"
   },
   "Projects": {
     "project1": [
       {
-        "title": "Aplicación Web para la Farmacia Santa Rosita",
+        "title": "App Web para Farmacia Santa Rosita",
         "name": "Santa Rosita Manager",
-        "description": "Aplicación en desarrollo para optimizar y gestionar los procesos internos de la farmacia, mejorando la eficiencia en el manejo de inventarios, pedidos y atención al cliente.",
-        "technologies": [
-          "NextJS",
-          "TypeScript",
-          "CSS",
-          "NestJS",
-          "PostgreSQL"
-        ],
-        "type": ["Aplicación Móvil", "Aplicación Web"],
+        "description": "En desarrollo para optimizar la gestión de inventarios y atención al cliente en farmacia.",
+        "technologies": ["NextJS", "TypeScript", "CSS", "NestJS", "PostgreSQL"],
+        "type": ["Web App"],
         "imageUrl": "/img/farmaciaSantaRosita.png",
         "imageLogoUrl": "/img/srappIcon.svg",
         "inDevelopment": true,
@@ -98,21 +88,11 @@
     ],
     "project2": [
       {
-        "title": "Aplicación Web para el evento AstroboyXL Listening Party",
+        "title": "App Web para AstroboyXL Listening Party",
         "name": "Astroboyxl.shop",
-        "description": "Aplicación web para el evento AstroboyXL LISTENING PARTY, para la compra de entradas, gestion de usuarios y compra de productos exclusivos de la tienda Trucho.",
-        "technologies": [
-          "HTML",
-          "CSS",
-          "JavaScript",
-          "React",
-          "NextJS",
-          "Typescript",
-          "Prisma",
-          "Vercel",
-          "PostgreSQL"
-        ],
-        "type": ["Aplicación Web"],
+        "description": "Desarrollé la plataforma web para la compra de entradas y gestión de usuarios para el evento AstroboyXL.",
+        "technologies": ["React", "NextJS", "Typescript", "Prisma", "Vercel"],
+        "type": ["Web App"],
         "imageUrl": "/img/mockup/astroboy.svg",
         "imageLogoUrl": "/img/astroicon.svg",
         "inDevelopment": false,
@@ -122,19 +102,11 @@
     ],
     "project3": [
       {
-        "title": "Aplicación Móvil Web para el CEA",
+        "title": "App Móvil Web para CEA",
         "name": "App CEA",
-        "description": "App móvil web para el control y seguimiento de animales silvestres rescatados por el CEA del Gobierno Autonomo Departamental de Santa Cruz",
-        "technologies": [
-          "HTML",
-          "TypeScript",
-          "SCSS",
-          "Ionic",
-          "PHP",
-          "MySQL",
-          "Bootstrap"
-        ],
-        "type": ["Aplicación Móvil"],
+        "description": "App móvil para el control y seguimiento de animales rescatados por el CEA de Santa Cruz.",
+        "technologies": ["Ionic", "PHP", "MySQL", "Bootstrap"],
+        "type": ["Móvil Web"],
         "imageUrl": "/img/mockup/appcea.svg",
         "imageLogoUrl": "/img/appceaIcon.svg",
         "inDevelopment": false,
@@ -144,9 +116,9 @@
     ],
     "project4": [
       {
-        "title": "Landing Page de mi primer portafolio profesional",
+        "title": "Portafolio Profesional",
         "name": "Portafolio",
-        "description": "Landing Page para mi primer portafolio personal, donde pude mostrar mis proyectos y habilidades.",
+        "description": "Mi primer portafolio profesional, una landing page para mostrar mis proyectos y habilidades.",
         "technologies": ["Angular", "TypeScript", "SCSS", "Bootstrap"],
         "type": ["Landing Page"],
         "imageUrl": "/img/mockup/portfoliov2.svg",
